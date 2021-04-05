@@ -22,6 +22,5 @@ public class Main {
             }
             System.out.printf("Uoc chung lon nhat cua %d va %d la %d", a,b, UCLN);
         }
-        
     }
 }
