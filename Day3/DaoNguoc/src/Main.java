@@ -16,7 +16,7 @@ public class Main {
         }
         System.out.println("Mang sau khi nhap: ");
         for(int i = 0;i<arraySize;i++){
-            System.out.println(array[i]);
+            System.out.print(array[i]+" ");
         }
         for(int j = 0; j<arraySize/2;j++){
             int middle = array[j];
@@ -25,7 +25,7 @@ public class Main {
         }
         System.out.println("Mang sau khi hoan doi:");
         for(int i = 0; i<arraySize;i++){
-            System.out.println(array[i]);
+            System.out.println(array[i] +" ");
         }
     }
 }
