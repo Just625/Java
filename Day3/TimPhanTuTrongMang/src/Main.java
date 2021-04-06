@@ -11,14 +11,12 @@ public class Main {
         for(int i =0;i<studentArr.length;i++){
             if(input.equals(studentArr[i])){
                 index = i;
+                System.out.printf("%s nam o vi tri thu %d", input, index);
                 break;
             }
         }
         if(index==-1){
             System.out.printf("Khong tim thay %s", input);
-        }else{
-            System.out.printf("%s nam o vi tri thu %d", input, index);
         }
-
     }
 }
