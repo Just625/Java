@@ -10,6 +10,12 @@ public class Main {
         System.out.println(point2D1);
         point2D1.setXY(2,2);
         System.out.println(point2D1);
+        //Gan gia tri cho 1 bien, roi dung vong lap for in ra. Ko thi se chi in ra dia chi o nho
+        float[] arr = point2D1.getXY();
+        for(int i = 0; i< arr.length;i++){
+            System.out.println(arr[i] +" ");
+        }
+        //Neu ko gan
         System.out.println(point2D1.getXY());
     }
 }

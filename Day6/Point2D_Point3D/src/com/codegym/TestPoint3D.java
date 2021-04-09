@@ -8,6 +8,9 @@ public class TestPoint3D {
         System.out.println(point3D1);
         point3D1.setXYZ(2,2,2);
         System.out.println(point3D1);
-        System.out.println(point3D1.getXYZ());
+        float[] arr = point3D1.getXYZ();
+        for(int i = 0; i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
 }
