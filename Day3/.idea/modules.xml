@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BT6.4/BT6.4.iml" filepath="$PROJECT_DIR$/BT6.4/BT6.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChuyenDoiNhietDo/ChuyenDoiNhietDo.iml" filepath="$PROJECT_DIR$/ChuyenDoiNhietDo/ChuyenDoiNhietDo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DaoNguoc/DaoNguoc.iml" filepath="$PROJECT_DIR$/DaoNguoc/DaoNguoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Day3.iml" filepath="$PROJECT_DIR$/.idea/Day3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemSoLuong/DemSoLuong.iml" filepath="$PROJECT_DIR$/DemSoLuong/DemSoLuong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DuongCheoChinh/DuongCheoChinh.iml" filepath="$PROJECT_DIR$/DuongCheoChinh/DuongCheoChinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GopMang/GopMang.iml" filepath="$PROJECT_DIR$/GopMang/GopMang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LyThuyet6.4/LyThuyet6.4.iml" filepath="$PROJECT_DIR$/LyThuyet6.4/LyThuyet6.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaxMang2Chieu/MaxMang2Chieu.iml" filepath="$PROJECT_DIR$/MaxMang2Chieu/MaxMang2Chieu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaxOfArray/MaxOfArray.iml" filepath="$PROJECT_DIR$/MaxOfArray/MaxOfArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MinArray/MinArray.iml" filepath="$PROJECT_DIR$/MinArray/MinArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MinArrayPt2/MinArrayPt2.iml" filepath="$PROJECT_DIR$/MinArrayPt2/MinArrayPt2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThemPhanTu/ThemPhanTu.iml" filepath="$PROJECT_DIR$/ThemPhanTu/ThemPhanTu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TimPhanTuTrongMang/TimPhanTuTrongMang.iml" filepath="$PROJECT_DIR$/TimPhanTuTrongMang/TimPhanTuTrongMang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TongMotCot/TongMotCot.iml" filepath="$PROJECT_DIR$/TongMotCot/TongMotCot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XoaPhanTu/XoaPhanTu.iml" filepath="$PROJECT_DIR$/XoaPhanTu/XoaPhanTu.iml" />
+    </modules>
+  </component>
+</project>
