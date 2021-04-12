@@ -20,6 +20,9 @@ public class Square extends Rectangle {
         super.setWidth(side);
         super.setLength(side);
     }
+    public double getArea(){
+        return this.getSide()*this.getSide();
+    }
 
     @Override
     public void setWidth(double width) {
