@@ -7,7 +7,7 @@ public class ComparableSquareTest {
         ComparableSquare[] squares = new ComparableSquare[3];
         squares[0] = new ComparableSquare(1.5);
         squares[1] = new ComparableSquare();
-        squares[2] = new ComparableSquare(2,"green", true);
+        squares[2] = new ComparableSquare(2,"green", false);
         System.out.println("Truoc khi sort:");
         for(ComparableSquare square:squares){
             System.out.println(square);
