@@ -13,6 +13,9 @@ public class Circle {
     protected void printA(){
         System.out.println("A");
     }
+    public void printB(){
+        System.out.println("B");
+    }
     public double getRadius() {
         return this.radius;
     }

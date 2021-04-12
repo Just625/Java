@@ -6,6 +6,7 @@ public class Main extends Circle{
         Main main = new Main();
         Circle circle3 = new Circle();
         System.out.println(circle3.getRadius());
+        circle3.printB();
         main.printA();
 
     }

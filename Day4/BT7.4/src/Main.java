@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
+    static Scanner src = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner src = new Scanner(System.in);
         Student student0 = new Student(0, "Nguyen Van A", "1/1/2001", 8.5);
         Student student1 = new Student(12, "Nguyen Van B", "2/2/2002", 10);
         Student student2 = new Student(2, "Nguyen Van C", "3/3/2003", 9.5);
@@ -26,63 +26,19 @@ public class Main {
                     break;
                 }
                 case 2:{
-                    System.out.println("Enter new student id:");
-                    int newID = src.nextInt();
-                    src.nextLine();
-                    System.out.println("Enter name:");
-                    String newName = src.nextLine();
-                    System.out.println("Enter date of birth:");
-                    String newDateOfBirth = src.nextLine();
-                    System.out.println("Enter mark:");
-                    double newMark = src.nextDouble();
-                    Student newStudent = new Student(newID,newName,newDateOfBirth,newMark);
-                    Student[] newAllStudent = new Student[allStudent.length+1];
-                    for(int i = 0; i < allStudent.length;i++){
-                        newAllStudent[i] = allStudent[i];
-                    }
-                    newAllStudent[newAllStudent.length-1] = newStudent;
-                    System.out.println();
-                    allStudent = new Student[newAllStudent.length];
-                    for(int i = 0;i<allStudent.length;i++){
-                        allStudent[i] = newAllStudent[i];
-                    }
+                    allStudent = addEle(allStudent);
                     System.out.println("Danh sach sinh vien sau khi them:");
                     showAll(allStudent);
                     break;
                 }
                 case 3:{
-                    System.out.println("Nhap ma sinh vien muon chinh sua:");
-                    int index = src.nextInt();
-                    System.out.println("1. Change name:");
-                    System.out.println("2. Change date of birth:");
-                    System.out.println("3. Change mark:");
-                    System.out.println("Enter your choice:");
-                    int userChoice = src.nextInt();
-                    changeElement(allStudent, index, userChoice);
+                    changeElement(allStudent);
                     System.out.println("Danh sach sinh vien sau khi chinh sua:");
                     showAll(allStudent);
                     break;
                 }
                 case 4:{
-                    System.out.println("Nhap ma sinh vien muon xoa:");
-                    int index = src.nextInt();
-                    Student[] newAllStudent = new Student[allStudent.length-1];
-                    for(int i = 0;i <allStudent.length;i++){
-                        if(allStudent[i].getId()==index){
-                            index = i;
-                        }
-                    }
-                    for(int j = 0; j<index;j++){
-                        newAllStudent[j] = allStudent[j];
-                    }
-                    for(int k=index;k<allStudent.length-1;k++){
-                        newAllStudent[k] = allStudent[k+1];
-                    }
-
-                    allStudent = new Student[newAllStudent.length];
-                    for(int l = 0; l<allStudent.length;l++){
-                        allStudent[l] = new Student(newAllStudent[l].getId(),newAllStudent[l].getName(),newAllStudent[l].getDateOfBirth(),newAllStudent[l].getMark());
-                    }
+                    allStudent = deleteEle(allStudent);
                     System.out.println("Danh sach sinh vien sau khi xoa:");
                     showAll(allStudent);
                     break;
@@ -114,7 +70,32 @@ public class Main {
             allStudent[i].display();
         }
     }
-    static void changeElement(Student[] allStudent, int index, int userChoice){
+    static Student[] addEle(Student[] allStudent){
+        System.out.println("Enter new student id:");
+        int newID = src.nextInt();
+        src.nextLine();
+        System.out.println("Enter name:");
+        String newName = src.nextLine();
+        System.out.println("Enter date of birth:");
+        String newDateOfBirth = src.nextLine();
+        System.out.println("Enter mark:");
+        double newMark = src.nextDouble();
+        Student newStudent = new Student(newID,newName,newDateOfBirth,newMark);
+        Student[] newAllStudent = new Student[allStudent.length+1];
+        for(int i = 0; i < allStudent.length;i++){
+            newAllStudent[i] = allStudent[i];
+        }
+        newAllStudent[newAllStudent.length-1] = newStudent;
+        return newAllStudent;
+    }
+    static void changeElement(Student[] allStudent){
+        System.out.println("Nhap ma sinh vien muon chinh sua:");
+        int index = src.nextInt();
+        System.out.println("1. Change name:");
+        System.out.println("2. Change date of birth:");
+        System.out.println("3. Change mark:");
+        System.out.println("Enter your choice:");
+        int userChoice = src.nextInt();
         Scanner src = new Scanner(System.in);
         for(int i = 0; i< allStudent.length;i++){
             if(index == allStudent[i].getId()){
@@ -145,6 +126,23 @@ public class Main {
             }
         }
     }
+    static Student[] deleteEle(Student[] allStudent){
+        System.out.println("Nhap ma sinh vien muon xoa:");
+        int index = src.nextInt();
+        Student[] newAllStudent = new Student[allStudent.length-1];
+        for(int i = 0;i <allStudent.length;i++){
+            if(allStudent[i].getId()==index){
+                index = i;
+            }
+        }
+        for(int j = 0; j<index;j++){
+            newAllStudent[j] = allStudent[j];
+        }
+        for(int k=index;k<allStudent.length-1;k++){
+            newAllStudent[k] = allStudent[k+1];
+        }
+        return  newAllStudent;
+    }
     static void findMaxMark(Student[] allStudent){
         double maxMark = allStudent[0].getMark();
         int index = 0;
@@ -162,20 +160,12 @@ public class Main {
         for(int i = 0; i<allStudent.length-1;i++){
             for(int j = i+1; j<allStudent.length;j++){
                 if(allStudent[i].getMark()<allStudent[j].getMark()){
-                    int middleId = allStudent[i].getId();
-                    allStudent[i].setId(allStudent[j].getId());
-                    allStudent[j].setId(middleId);
-                    String middleName = allStudent[i].getName();
-                    allStudent[i].setName(allStudent[j].getName());
-                    allStudent[j].setName(middleName);
-                    String middleDateOfBirth = allStudent[i].getDateOfBirth();
-                    allStudent[i].setDateOfBirth(allStudent[j].getDateOfBirth());
-                    allStudent[j].setDateOfBirth(middleDateOfBirth);
-                    double middleMark = allStudent[i].getMark();
-                    allStudent[i].setMark(allStudent[j].getMark());
-                    allStudent[j].setMark(middleMark);
+                    Student temp = allStudent[i];
+                    allStudent[i] = allStudent[j];
+                    allStudent[j] = temp;
                 }
             }
         }
     }
+
 }

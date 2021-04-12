@@ -14,11 +14,11 @@ public class Fan {
         this.color = "blue";
     }
     public Fan(String speed, double radius, String color, boolean on){
-        if(speed.equals(SLOW)){
+        if(speed.equals("SLOW")){
             this.speed = this.SLOW;
-        }else if(speed.equals(MEDIUM )){
+        }else if(speed.equals("MEDIUM")){
             this.speed = this.MEDIUM;
-        }else if(speed.equals(FAST)){
+        }else if(speed.equals("FAST")){
             this.speed = this.FAST;
         }
         this.radius = radius;
@@ -58,9 +58,9 @@ public class Fan {
     }
     public String toString(){
         if(this.on){
-            return "Fan is on\nSpeed: " + this.speed + " Color: " + this.color + " Radius: " + this.radius;
+            return "Fan is on\nSpeed: " + this.speed + ", color: " + this.color + ", radius: " + this.radius;
         }else{
-            return "Fan is off\n"+ "Color: " + this.color + " Radius: " + this.radius;
+            return "Fan is off\n"+ "Color: " + this.color + ", radius: " + this.radius;
         }
     }
 }

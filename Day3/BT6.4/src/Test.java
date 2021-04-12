@@ -27,6 +27,9 @@ public class Test {
                 break;
             }
             case 2: {
+                //Co the cho ca ham ` vao trong case va bo comment de thay doi bieu thuc ban dau`
+
+
                 addEle(id, name, bDay, mark);
 //                id = new int[newId.length];
 //                name = new String[newId.length];

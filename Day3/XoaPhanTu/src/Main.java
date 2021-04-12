@@ -8,8 +8,8 @@ public class Main {
             newArr[i] = arr[i];
         }
         //Duyet mang tu sau vi tri thu index den het
-        for(int j = index+1;j<arr.length;j++){
-            newArr[j-1] = arr[j];
+        for(int j = index;j<arr.length-1;j++){
+            newArr[j] = arr[j+1];
         }
         return  newArr;
     }
