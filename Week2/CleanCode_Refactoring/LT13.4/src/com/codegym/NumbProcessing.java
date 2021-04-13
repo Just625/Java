@@ -1,26 +1,32 @@
 package com.codegym;
 
-public class ProcessNumb {
+public class NumbProcessing {
     private int numb;
     private String message = "";
+    static final String FIZZ_MESSAGE = "Fizz";
+    static final String BUZZ_MESSAGE = "Buzz";
 
-    public ProcessNumb() {
+    public NumbProcessing() {
 
     }
 
-    public ProcessNumb(int numb) {
+    public NumbProcessing(int numb) {
         this.numb = numb;
     }
 
     public void checkNumber() {
-        boolean isDivisibleBy3 = this.numb % 3 == 0;
-        boolean isDivisibleBy5 = this.numb % 5 == 0;
+        boolean isDivisibleBy3 = isDivisibleByNumb(3);
+        boolean isDivisibleBy5 = isDivisibleByNumb(5);
         if (isDivisibleBy3) {
-            this.message += "Fizz";
+            this.message += FIZZ_MESSAGE;
         }
         if (isDivisibleBy5) {
-            this.message += "Buzz";
+            this.message += BUZZ_MESSAGE;
         }
         System.out.println(this.message);
+    }
+
+    private boolean isDivisibleByNumb(int i) {
+        return this.numb % i == 0;
     }
 }
