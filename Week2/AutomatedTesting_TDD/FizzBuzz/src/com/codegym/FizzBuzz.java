@@ -28,81 +28,93 @@ public class FizzBuzz {
             result += BUZZ;
         }
         if (result.equals("")) {
-            switch (number / 10) {
-                case 1:
-                    result = MUOI;
-                    break;
-                case 2:
-                    result = HAI;
-                    break;
-                case 3:
-                    result = BA;
-                    break;
-                case 4:
-                    result = BON;
-                    break;
-                case 5:
-                    result = NAM;
-                    break;
-                case 6:
-                    result = SAU;
-                    break;
-                case 7:
-                    result = BAY;
-                    break;
-                case 8:
-                    result = TAM;
-                    break;
-                case 9:
-                    result = CHIN;
-                    break;
+            int hangChuc = number / 10;
+            result = docHangChuc(result, hangChuc);
+            boolean khongCoHangChuc = hangChuc != 0;
+            if (khongCoHangChuc) {
+                result += " ";
+            }
+            int hangDonVi = number % 10;
+            result = docHangDV(result, hangChuc, khongCoHangChuc, hangDonVi);
+        }
+        return result;
+    }
 
-            }
-            if(number/10!=0){
-                result+=" ";
-            }
-            switch (number % 10) {
-                case 0:
-                    if (number / 10 == 0) {
-                        result += KHONG;
-                    } else if (number / 10 == 1) {
-                        result += "";
-                    } else {
-                        result += MUOI;
-                    }
-                    break;
-                case 1:
-                    result += MOT;
-                    break;
-                case 2:
-                    result += HAI;
-                    break;
-                case 3:
-                    result += BA;
-                    break;
-                case 4:
-                    result += BON;
-                    break;
-                case 5:
-                    if (number / 10 != 0) {
-                        result += LAM;
-                    } else {
-                        result += NAM;
-                    }
-                    break;
-                case 6:
-                    result += SAU;
-                    break;
-                case 7:
-                    result += BAY;
-                    break;
-                case 8:
-                    result += TAM;
-                    break;
-                case 9:
-                    result += CHIN;
-                    break;
-            }
+    private String docHangDV(String result, int hangChuc, boolean khongCoHangChuc, int hangDonVi) {
+        switch (hangDonVi) {
+            case 0:
+                if (hangChuc == 0) {
+                    result += KHONG;
+                } else if (hangChuc == 1) {
+                    result += "";
+                } else {
+                    result += MUOI;
+                }
+                break;
+            case 1:
+                result += MOT;
+                break;
+            case 2:
+                result += HAI;
+                break;
+            case 3:
+                result += BA;
+                break;
+            case 4:
+                result += BON;
+                break;
+            case 5:
+                if (khongCoHangChuc) {
+                    result += LAM;
+                } else {
+                    result += NAM;
+                }
+                break;
+            case 6:
+                result += SAU;
+                break;
+            case 7:
+                result += BAY;
+                break;
+            case 8:
+                result += TAM;
+                break;
+            case 9:
+                result += CHIN;
+                break;
+        }
+        return result;
+    }
+
+    private String docHangChuc(String result, int hangChuc) {
+        switch (hangChuc) {
+            case 1:
+                result = MUOI;
+                break;
+            case 2:
+                result = HAI;
+                break;
+            case 3:
+                result = BA;
+                break;
+            case 4:
+                result = BON;
+                break;
+            case 5:
+                result = NAM;
+                break;
+            case 6:
+                result = SAU;
+                break;
+            case 7:
+                result = BAY;
+                break;
+            case 8:
+                result = TAM;
+                break;
+            case 9:
+                result = CHIN;
+                break;
 
         }
         return result;
