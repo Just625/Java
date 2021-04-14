@@ -43,4 +43,12 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.check(numb);
         assertEquals(expected,actual);
     }
+    @Test
+    void FizzBuzzTest6(){
+        int numb = Integer.MAX_VALUE;
+        String expected = numb+"";
+        String actual = fizzBuzz.check(numb);
+        assertEquals(expected,actual);
+    }
+
 }
