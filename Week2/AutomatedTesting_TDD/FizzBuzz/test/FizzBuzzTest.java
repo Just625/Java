@@ -1,4 +1,5 @@
 import com.codegym.FizzBuzz;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,7 +12,7 @@ public class FizzBuzzTest {
     @Test
     void FizzBuzzTest(){
         int numb = 1;
-        String expected = "1";
+        String expected = "Mot";
         String actual = fizzBuzz.check(numb);
         assertEquals(expected,actual);
     }
@@ -45,17 +46,9 @@ public class FizzBuzzTest {
     }
     @Test
     void FizzBuzzTest6(){
-        int numb = Integer.MAX_VALUE;
-        String expected = numb+"";
+        int numb = 16;
+        String expected = "Muoi Sau";
         String actual = fizzBuzz.check(numb);
         assertEquals(expected,actual);
     }
-    @Test
-    void FizzBuzzTest7(){
-        int numb = Integer.MIN_VALUE;
-        String expected = numb+"";
-        String actual = fizzBuzz.check(numb);
-        assertEquals(expected,actual);
-    }
-
 }
