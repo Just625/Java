@@ -22,5 +22,6 @@ public class AbstrctAndInterfaceTests {
             System.out.println(fruit.howtoEat());
         }
 
+
     }
 }
