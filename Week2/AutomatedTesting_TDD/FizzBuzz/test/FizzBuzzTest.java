@@ -50,5 +50,12 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.check(numb);
         assertEquals(expected,actual);
     }
+    @Test
+    void FizzBuzzTest7(){
+        int numb = Integer.MIN_VALUE;
+        String expected = numb+"";
+        String actual = fizzBuzz.check(numb);
+        assertEquals(expected,actual);
+    }
 
 }
