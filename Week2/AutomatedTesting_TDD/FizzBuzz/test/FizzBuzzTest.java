@@ -51,4 +51,11 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.check(numb);
         assertEquals(expected,actual);
     }
+    @Test
+    void FizzBuzzTest7(){
+        int numb = 98;
+        String expected = "Chin Tam";
+        String actual = fizzBuzz.check(numb);
+        assertEquals(expected,actual);
+    }
 }

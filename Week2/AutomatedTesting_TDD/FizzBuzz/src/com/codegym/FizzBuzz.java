@@ -4,6 +4,18 @@ public class FizzBuzz {
 
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";
+    public static final String MUOI = "Muoi";
+    public static final String HAI = "Hai";
+    public static final String BA = "Ba";
+    public static final String BON = "Bon";
+    public static final String NAM = "Nam";
+    public static final String SAU = "Sau";
+    public static final String BAY = "Bay";
+    public static final String TAM = "Tam";
+    public static final String CHIN = "Chin";
+    public static final String LAM = "Lam";
+    public static final String MOT = "Mot";
+    public static final String KHONG = "Khong";
 
     public String check(int number) {
         String result = "";
@@ -18,31 +30,31 @@ public class FizzBuzz {
         if (result.equals("")) {
             switch (number / 10) {
                 case 1:
-                    result = "Muoi";
+                    result = MUOI;
                     break;
                 case 2:
-                    result = "Hai";
+                    result = HAI;
                     break;
                 case 3:
-                    result = "Ba";
+                    result = BA;
                     break;
                 case 4:
-                    result = "Bon";
+                    result = BON;
                     break;
                 case 5:
-                    result = "Nam";
+                    result = NAM;
                     break;
                 case 6:
-                    result = "Sau";
+                    result = SAU;
                     break;
                 case 7:
-                    result = "Bay";
+                    result = BAY;
                     break;
                 case 8:
-                    result = "Tam";
+                    result = TAM;
                     break;
                 case 9:
-                    result = "Chin";
+                    result = CHIN;
                     break;
 
             }
@@ -52,43 +64,43 @@ public class FizzBuzz {
             switch (number % 10) {
                 case 0:
                     if (number / 10 == 0) {
-                        result += "Khong";
+                        result += KHONG;
                     } else if (number / 10 == 1) {
                         result += "";
                     } else {
-                        result += "Muoi";
+                        result += MUOI;
                     }
                     break;
                 case 1:
-                    result += "Mot";
+                    result += MOT;
                     break;
                 case 2:
-                    result += "Hai";
+                    result += HAI;
                     break;
                 case 3:
-                    result += "Ba";
+                    result += BA;
                     break;
                 case 4:
-                    result += "Bon";
+                    result += BON;
                     break;
                 case 5:
                     if (number / 10 != 0) {
-                        result += "Lam";
+                        result += LAM;
                     } else {
-                        result += "Nam";
+                        result += NAM;
                     }
                     break;
                 case 6:
-                    result += "Sau";
+                    result += SAU;
                     break;
                 case 7:
-                    result += "Bay";
+                    result += BAY;
                     break;
                 case 8:
-                    result += "Tam";
+                    result += TAM;
                     break;
                 case 9:
-                    result += "Chin";
+                    result += CHIN;
                     break;
             }
 
