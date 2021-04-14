@@ -1,14 +1,24 @@
 package com.codegym;
 
 public class FizzBuzz {
+
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+
     public String check(int number){
         String result = "";
-        if(number%3==0){
-            result+="Fizz";
+        boolean isDivisibleBy3 = number % 3 == 0;
+        if(isDivisibleBy3){
+            result+= FIZZ;
         }
-        if(number%5==0){
-            result+="Buzz";
+        boolean isDivisibleBy5 = number % 5 == 0;
+        if(isDivisibleBy5){
+            result+= BUZZ;
         }
-        return result;
+        if(result.equals("")){
+            return number+"";
+        }else{
+            return result;
+        }
     }
 }
