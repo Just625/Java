@@ -45,9 +45,9 @@ public class MyLinkedList {
     }
 
     public void addFirst(Object data) {
-        Node temp = head;
-        head = new Node(data);
-        head.next = temp;
+        Node newHead = new Node(data);
+        newHead.next = head;
+        head = newHead;
         size++;
     }
 
