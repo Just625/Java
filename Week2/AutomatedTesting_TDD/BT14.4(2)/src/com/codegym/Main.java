@@ -10,9 +10,17 @@ public class Main {
         System.out.println("Nhap vao so ho su dung dien:");
         int n = src.nextInt();
         Receipt[] receipts = new Receipt[n];
-
-        for(){
-
-        }
+        ReceiptManagement receiptManagement = new ReceiptManagement(receipts);
+        receiptManagement.initReceipt();
+        receiptManagement.showAllReceipt();
+        receiptManagement.calculateMoneyFromCode();
     }
+
+
+
+
+
+
+
+
 }

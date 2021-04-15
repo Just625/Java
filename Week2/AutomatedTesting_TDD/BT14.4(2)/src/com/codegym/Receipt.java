@@ -1,5 +1,7 @@
 package com.codegym;
 
+import java.util.Scanner;
+
 public class Receipt {
     private Customer customer = new Customer();
     private double oldIndex;
@@ -40,16 +42,19 @@ public class Receipt {
     }
 
     public double calculateMoney() {
-        return (this.oldIndex - this.newIndex) * 750;
+        return (this.newIndex - this.oldIndex) * 750;
     }
 
     public void displayReceipt() {
         this.customer.displayCustomerInfo();
-        System.out.printf(", Old index: %f, New index: %f, Money calculated: %f", this.oldIndex, this.newIndex, this.calculateMoney());
+        System.out.printf(", Old index: %f, New index: %f\n", this.oldIndex, this.newIndex);
     }
-    public void inputReceiptInfo(Customer customer, double oldIndex, double newIndex){
+    public void inputReceiptInfo(){
+        Scanner src = new Scanner(System.in);
         this.customer.inputCustomerInfo();
-        this.oldIndex = oldIndex;
-        this.newIndex = newIndex;
+        System.out.printf("Enter old index:");
+        this.oldIndex = src.nextDouble();
+        System.out.printf("Enter new index:");
+        this.newIndex = src.nextDouble();
     }
 }
