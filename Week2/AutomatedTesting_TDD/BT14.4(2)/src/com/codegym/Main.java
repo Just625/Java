@@ -16,7 +16,7 @@ public class Main {
             showMenu();
             System.out.println("enter your choice:");
             choice = src.nextInt();
-            if (choice < 0 || choice > 3) {
+            if (choice < 0 || choice > 5) {
                 System.out.println("Lua chon khong hop le");
             }
             switch (choice) {
@@ -29,14 +29,21 @@ public class Main {
                 case 3:
                     receiptManagement.calculateMoneyFromCode();
                     break;
+                case 4:
+                    receiptManagement.addNewReceipt();
+                    break;
+                case 5:
+                    receiptManagement.deleteReceipt();
             }
-        } while (choice != 0 || choice > 3);
+        } while (choice != 0 || choice > 5);
     }
 
     private static void showMenu() {
         System.out.println("1. Nhap du lieu ban dau cho receipt");
         System.out.println("2. Hien thi thong tin ");
         System.out.println("3. Tinh tien cho customer");
+        System.out.println("4. Them 1 receipt");
+        System.out.println("5. Xoa 1 receipt");
         System.out.println("0. Thoat chuong trinh");
     }
 
