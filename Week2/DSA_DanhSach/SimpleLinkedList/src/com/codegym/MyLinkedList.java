@@ -1,25 +1,36 @@
 package com.codegym;
 
-import com.sun.glass.ui.Size;
-
-public class MyLinkedList {
+public class MyLinkedList<T> {
     private Node head;
-    private int size;
+    private int numNodesFrom0 = 0;
 
     private class Node {
         private Node next;
-        private Object data;
+        private T data;
 
         public Node() {
 
         }
 
-        public Node(Object data) {
-            this.data = data;
+        public Node(T t) {
+            this.data = t;
+            this.next = null;
         }
 
-        public Object getData() {
-            return this.data;
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public T getData() {
+            return data;
+        }
+
+        public void setData(T data) {
+            this.data = data;
         }
     }
 
@@ -27,48 +38,52 @@ public class MyLinkedList {
 
     }
 
-    public MyLinkedList(Object data) {
-        this.head = new Node(data);
-        size++;
+    public MyLinkedList(T t) {
+        this.head = new Node(t);
     }
 
-    public void add(int index, Object data) {
-        Node current = head;
-        //Bat dau o head nen chi lap (i-1)lan
-        for (int i = 0; i < index - 1 && current.next != null; i++) {
+    public void add(int index, T t) {
+        if (index < 0 || index > this.numNodesFrom0 +1) {
+            throw new IndexOutOfBoundsException("Khong them vao vi tri duoc");
+        }
+        Node current = this.head;
+        for (int i = 1; i < index; i++) {
             current = current.next;
         }
         Node middle = current.next;
-        current.next = new Node(data);
-        current.next.next = middle;
-        size++;
+        current.next = new Node(t);
+        (current.next).next = middle;
+        this.numNodesFrom0++;
     }
 
-    public void addFirst(Object data) {
-        Node newHead = new Node(data);
-        newHead.next = head;
-        head = newHead;
-        size++;
+    public void addFirst(T t) {
+        Node newHead = new Node(t);
+        newHead.next = this.head;
+        this.head = newHead;
+        this.numNodesFrom0++;
     }
 
     public Node get(int index) {
-        Node current = head;
-        for (int i = 0; i < index; i++) {
+        if (index < 0 || index > this.numNodesFrom0 ) {
+            throw new IndexOutOfBoundsException("Vi tri khong hop le");
+        }
+        Node current = this.head;
+        for (int i = 1; i < index; i++) {
             current = current.next;
         }
         return current;
     }
 
     public void printList() {
-        //Cach 1:
-        for (int i = 0; i < size; i++) {
-            System.out.println(this.get(i).data);
+        Node current = this.head;
+        int index = 0;
+        while (current != null) {
+            System.out.println("Vi tri thu " + index + ": " + current.getData());
+            current = current.next;
+            index++;
         }
-        //Cach 2:
-//        Node current = head;
-//        while (current != null) {
-//            System.out.println(current);
-//            current = current.next;
-//        }
     }
 }
+
+
+
