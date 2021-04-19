@@ -31,6 +31,7 @@ public class ProductManager {
     public void edit() {
         System.out.println(ID_REQUEST+" can chinh sua:");
         String id = src.nextLine();
+        System.out.println(id);
         int index = findIndexById(id);
         if (index == -1) {
             System.out.println(NOT_VALID_PRODUCT);
@@ -52,6 +53,7 @@ public class ProductManager {
                 }
             }
         }
+        src.nextLine();
     }
 
     private int findIndexById(String id) {
@@ -78,6 +80,7 @@ public class ProductManager {
     public void removeProduct() {
         System.out.println(ID_REQUEST+" can xoa");
         String id = src.nextLine();
+        System.out.println(id);
         int index = this.findIndexById(id);
         if (index == -1) {
             System.out.println(NOT_VALID_PRODUCT);
