@@ -196,6 +196,7 @@ public class MyLinkedList<T> {
             return this.head.getData();
         }
         Node current = this.head;
+        //Lap du i lan la duoc
         for (int j = 1; j <= i; j++) {
             current = current.next;
         }
