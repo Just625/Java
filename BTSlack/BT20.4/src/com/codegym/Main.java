@@ -20,7 +20,7 @@ public class Main {
         do {
             showMenu();
             choice = src.nextInt();
-            if(choice>4||choice<0){
+            if(choice>3||choice<0){
                 System.out.println("Invalid choice");
             }
             switch (choice){
@@ -33,10 +33,6 @@ public class Main {
                     break;
                 }
                 case 3:{
-                    cbgvManagment.calculate();
-                    break;
-                }
-                case 4:{
                     cbgvManagment.showGreaterAvg();
                     break;
                 }
@@ -47,8 +43,7 @@ public class Main {
     private static void showMenu() {
         System.out.println("1. Nhap thong tin cac giao vien: ");
         System.out.println("2. Hien thi thong tin ca nhan can bo giao vien:");
-        System.out.println("3. Tinh luong giao vien");
-        System.out.println("4. Hien thi can bo co luong thuc linh lon hon 8 trieu:");
+        System.out.println("3. Hien thi can bo co luong thuc linh lon hon 8 trieu:");
         System.out.println("0. Thoat chuong trinh");
         System.out.println("Nhap vao lua chon cua ban:");
     }
