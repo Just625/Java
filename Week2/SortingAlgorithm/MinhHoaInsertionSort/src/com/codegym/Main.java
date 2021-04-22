@@ -7,7 +7,6 @@ public class Main {
         int[] list = {1, 9, 6, -8, 0, 4};
         displayArr(list);
         insertionSort(list);
-//        displayArr(list);
     }
 
     private static void displayArr(int[] list) {
@@ -24,14 +23,16 @@ public class Main {
             while (position > 0) {
                 if (temp < list[position - 1]) {
                     System.out.printf("%d <%d\n", temp, list[position - 1]);
+                    System.out.printf("Push %d to index %d\n", list[position-1], position);
                     list[position] = list[position - 1];
+                    displayArr(list);
                 } else {
                     break;
                 }
                 position--;
             }
             if (position != i) {
-                System.out.printf("Swap %d with %d\n",temp , list[position]);
+                System.out.printf("Add %d to %d\n",temp , list[position]);
                 list[position] = temp;
             }
             System.out.printf("Array after %d times sorting\n", i);
