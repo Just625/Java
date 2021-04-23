@@ -85,15 +85,15 @@ public class PaperManagement {
         for (int i = 0; i < list.size() - 1; i++) {
             int minIndex = i;
             for (int j = i + 1; j < list.size(); j++) {
-                char firstCharOfMinCode = list.get(j).getCode().charAt(0);
-                char firstCharOfCode = list.get(minIndex).getCode().charAt(0);
-                if (firstCharOfMinCode < firstCharOfCode) {
+                String comparedCode = list.get(j).getCode();
+                String minCode = list.get(minIndex).getCode();
+                if (minCode.charAt(0) > comparedCode.charAt(0)) {
                     minIndex = j;
-                } else if (firstCharOfMinCode == firstCharOfCode) {
-                    char secondCharOfMinCode = list.get(j).getCode().charAt(1);
-                    char secondCharOfCode = list.get(minIndex).getCode().charAt(1);
-                    if (secondCharOfMinCode < secondCharOfCode) {
-                        minIndex = j;
+                } else if (minCode.charAt(0) == comparedCode.charAt(0)) {
+                    for (int k = 1; k < list.get(j).getCode().length(); k++) {
+                        if (minCode.charAt(k) > comparedCode.charAt(k)) {
+                            minIndex = j;
+                        }
                     }
                 }
             }
@@ -105,15 +105,15 @@ public class PaperManagement {
         }
     }
 
-    public int binarySearch(int left, int right, String code) {
+    public int binarySort(int left, int right, String code) {
         int middle = (left + right) / 2;
         while (left <= right) {
             if (list.get(middle).getCode().equals(code)) {
                 return middle;
             } else if (list.get(middle).getCode().charAt(0) < code.charAt(0)) {
-                return binarySearch(middle + 1, right, code);
+                return binarySort(middle + 1, right, code);
             } else {
-                return binarySearch(left, middle - 1, code);
+                return binarySort(left, middle - 1, code);
             }
         }
         return -1;
@@ -124,7 +124,7 @@ public class PaperManagement {
         this.sortList();
         System.out.println(ENTER_CODE);
         String code = src.nextLine();
-        int index = binarySearch(0, list.size() - 1, code);
+        int index = binarySort(0, list.size() - 1, code);
         if (index == -1) {
             System.out.println(NOT_FOUND_MSG);
         } else {
