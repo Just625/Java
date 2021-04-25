@@ -1,6 +1,6 @@
 package com.codegym;
 
-import sun.swing.BakedArrayList;
+
 
 import java.io.*;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ public class ReaderAndWriter {
         File file = new File(filePath);
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line = "";
+            String line;
             while ((line = reader.readLine()) != null) {
                 list.add(line);
             }
@@ -27,8 +27,8 @@ public class ReaderAndWriter {
         try{
             System.out.println("So ki tu trong file la: "+list.size());
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-            for(int i = 0; i <list.size();i++){
-                writer.write(list.get(i));
+            for (String element : list) {
+                writer.write(element);
                 writer.newLine();
             }
             writer.close();
