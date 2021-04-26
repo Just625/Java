@@ -38,6 +38,7 @@ public class Main {
         try {
             FileInputStream fis = new FileInputStream(filePath);
             ObjectInputStream ois = new ObjectInputStream(fis);
+            //lenh readObject tra ve Object nen phai ep kie ve lop con de co the gan vao list duoc
             list = (List<Student>) ois.readObject();
             ois.close();
             fis.close();
