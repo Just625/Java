@@ -15,7 +15,12 @@ public class Main {
             String regex = "[A-Za-z0-9]+@[A-Za-z0-9]+\\.com";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(str);
-            System.out.println(matcher.matches());
+            if(matcher.matches()){
+                System.out.println(str+" is valid\n");
+            }else{
+                System.out.println(str+" is not valid\n");
+            }
+
         }
     }
 }
