@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="edc7afcc-733c-48ef-b287-6f47d634ec20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../BTSlack/BT22.4/src/com/codegym/PaperManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTSlack/BT22.4/src/com/codegym/PaperManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Debug&amp;ExceptionHandling/IllegalTriangleException/out/production/IllegalTriangleException/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Debug&amp;ExceptionHandling/IllegalTriangleException/out/production/IllegalTriangleException/com/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/JavaCollectionFramework/LT19.4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/JavaCollectionFramework/LT19.4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/CaiDatInsertionSort/out/production/CaiDatInsertionSort/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/CaiDatInsertionSort/out/production/CaiDatInsertionSort/com/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/CaiDatInsertionSort/src/com/codegym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/CaiDatInsertionSort/src/com/codegym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaBubbleSort/out/production/MinhHoaBubbleSort/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaBubbleSort/out/production/MinhHoaBubbleSort/com/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaBubbleSort/src/com/codegym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaBubbleSort/src/com/codegym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaInsertionSort/out/production/MinhHoaInsertionSort/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaInsertionSort/out/production/MinhHoaInsertionSort/com/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaInsertionSort/src/com/codegym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/SortingAlgorithm/MinhHoaInsertionSort/src/com/codegym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Stack&amp;Queue/Demo_Queue/src/com/codegym/XayDungQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Stack&amp;Queue/Demo_Queue/src/com/codegym/XayDungQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/IO_TextFile/DocFileCSV/out/production/DocFileCSV/com/codegym/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/IO_TextFile/DocFileCSV/out/production/DocFileCSV/com/codegym/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/IO_TextFile/DocFileCSV/src/com/codegym/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/IO_TextFile/DocFileCSV/src/com/codegym/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/String&amp;amp_Regex/CrawlDataFromWebsite/out/production/CrawlDataFromWebsite/com/codegym/CrawlSongExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/String&amp;amp_Regex/CrawlDataFromWebsite/out/production/CrawlDataFromWebsite/com/codegym/CrawlSongExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/String&amp;amp_Regex/ValidatePhoneNumber/src/com/codegym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/String&amp;amp_Regex/ValidatePhoneNumber/src/com/codegym/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/HienThiSoChanLe/out/production/HienThiSoChanLe/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/HienThiSoChanLe/out/production/HienThiSoChanLe/com/codegym/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/LT/src/com/codegym/EvenThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/LT/src/com/codegym/EvenThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/LT/src/com/codegym/OddThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/LT/src/com/codegym/OddThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/RacingCars/out/production/RacingCars/com/codegym/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/RacingCars/out/production/RacingCars/com/codegym/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/SlideTest/src/com/codegym/PrintCharNTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/SlideTest/src/com/codegym/PrintCharNTimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/SlideTest/src/com/codegym/PrintFrom1ToChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/SlideTest/src/com/codegym/PrintFrom1ToChar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week3/Threading/SlideTest2/src/com/codegym/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week3/Threading/SlideTest2/src/com/codegym/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Structural_Design_Pattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Structural_Design_Pattern/com/codegym/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Structural_Design_Pattern/com/codegym/MathCalculatorProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Structural_Design_Pattern/com/codegym/MathSubject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Structural_Design_Pattern/com/codegym/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codegym/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codegym/MathCalculatorProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codegym/MathSubject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codegym/Subject.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1s9ja1ehuhW9PRIJXgS5xNjVLg2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TrienKhaiProxy" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.codegym.Main" />
+      <module name="Structural_Design_Pattern" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edc7afcc-733c-48ef-b287-6f47d634ec20" name="Default Changelist" comment="" />
+      <created>1620291761714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620291761714</updated>
+      <workItem from="1620291766217" duration="885000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
