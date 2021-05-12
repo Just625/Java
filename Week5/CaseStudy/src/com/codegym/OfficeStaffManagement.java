@@ -25,8 +25,9 @@ public class OfficeStaffManagement implements IGeneralInterface<OfficeStaff> {
 
     @Override
     public void showAll() {
+        System.out.printf("%-10s%-15s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
         for (OfficeStaff staff : officeStaffList) {
-            System.out.println(staff);
+            staff.display();
         }
     }
 

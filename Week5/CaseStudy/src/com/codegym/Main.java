@@ -161,7 +161,8 @@ public class Main {
                             OfficeStaff currentEmployee = oFManagement.getOfficeStaffByIndex(currentEmployeeIndex);
                             switch (employeeChoice) {
                                 case 1: {
-                                    System.out.println(currentEmployee);
+                                    System.out.printf("%-10s%-15s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
+                                    currentEmployee.display();
                                     break;
                                 }
                                 case 2: {
@@ -398,11 +399,11 @@ public class Main {
 
     private static List<OfficeStaff> initOFList() {
         List<OfficeStaff> list = new ArrayList<>();
-        list.add(new Developer("employee1", "Tinker", "employee", 27, "Radiant", 10000000));
+        list.add(new Developer("E01", "Tinker", "employee", 27, "Radiant", 10000000));
         list.get(0).setWorkDaysInMonth(8);
-        list.add(new Tester("employee2", "Axe", "employee", 27, "Dire", 8000000));
+        list.add(new Tester("E02", "Axe", "employee", 27, "Dire", 8000000));
         list.get(0).setWorkDaysInMonth(7);
-        list.add(new Sales("employee3", "Invoker", "employee", 27, "Radiant", 9000000));
+        list.add(new Sales("E03", "Invoker", "employee", 27, "Radiant", 9000000));
         list.get(0).setWorkDaysInMonth(5);
         return list;
     }
@@ -416,7 +417,7 @@ public class Main {
             System.out.println("Can't find office staff with this id" + id);
         } else {
             System.out.println("Enter new info");
-            OfficeStaff newOfficeStaff = getOfficeStaffInfo(src);
+            OfficeStaff newOfficeStaff = getOfficeStaffInfo(src,officeStaffManagement);
             officeStaffManagement.update(index, newOfficeStaff);
             System.out.println("Update completed");
         }
@@ -439,7 +440,7 @@ public class Main {
 
     private static void createNewOfficeStaff(Scanner src, OfficeStaffManagement officeStaffManagement) {
         src.nextLine();
-        OfficeStaff newOfficeStaff = getOfficeStaffInfo(src);
+        OfficeStaff newOfficeStaff = getOfficeStaffInfo(src, officeStaffManagement);
         officeStaffManagement.create(newOfficeStaff);
         System.out.println("Add completed");
     }
@@ -451,9 +452,21 @@ public class Main {
         System.out.println("Add completed");
     }
 
-    private static OfficeStaff getOfficeStaffInfo(Scanner src) {
-        System.out.println("Enter id");
-        String id = src.nextLine();
+    private static OfficeStaff getOfficeStaffInfo(Scanner src, OfficeStaffManagement officeStaffManagement) {
+        String id;
+        boolean isDuplicateID = false;
+        do {
+            System.out.println("Enter id");
+            id = src.nextLine();
+            List<OfficeStaff> officeStaffList = officeStaffManagement.getOfficeStaffList();
+            for (int i = 0; i < officeStaffList.size(); i++) {
+                if (officeStaffList.get(i).getId().equals(id)) {
+                    isDuplicateID = true;
+                    System.err.println("Duplicate ID, please choose another ID");
+                    break;
+                }
+            }
+        } while (isDuplicateID);
         System.out.println("Enter name");
         String name = src.nextLine();
         String role = "employee";
@@ -488,6 +501,7 @@ public class Main {
     }
 
     private static void showOfficeStaffMenu() {
+        System.out.println();
         System.out.println("OFFICE STAFF MENU");
         System.out.println("1. Show all office staff");
         System.out.println("2. Add a office staff");
@@ -513,6 +527,7 @@ public class Main {
     }
 
     private static void showAdminMenu() {
+        System.out.println();
         System.out.println("MAIN MENU");
         System.out.println("1. Open office staff menu");
         System.out.println("2. Open non-office staff menu");
@@ -520,6 +535,7 @@ public class Main {
     }
 
     private static void showLoginMenu() {
+        System.out.println();
         System.out.println("LOGIN MENU");
         System.out.println("1. Sign in");
         System.out.println("2. Sign up");
@@ -527,6 +543,7 @@ public class Main {
     }
 
     private static void showStaffMenu() {
+        System.out.println();
         System.out.println("STAFF MENU");
         System.out.println("1. Show personal information ");
         System.out.println("2. Edit personal information ");
