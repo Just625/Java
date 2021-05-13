@@ -17,8 +17,8 @@ public class Main {
         // write your code here
         Scanner src = new Scanner(System.in);
         List<Person> personList = new ArrayList<>();
-        personList.add(new Person("0971234567", "CodeGym", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
-        personList.add(new Person("0971234568", "Bạn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234567", "Codm", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
         DanhBaManagement danhBaManagement = new DanhBaManagement(personList);
         int choice;
         do {
@@ -57,14 +57,18 @@ public class Main {
                         try {
                             String line;
                             br = new BufferedReader(new FileReader("C:\\Users\\Admin\\Desktop\\CodeGym\\Java\\Java\\Week5\\Test\\data\\contacts.csv"));
+                            int count = 0;
                             while ((line = br.readLine()) != null) {
                                 list = parseCsvLine(line);
-                                Person person = new Person();
-                                for (int i = 0; i < list.size(); i++) {
-                                    person.set(i, list.get(i));
+                                if (!list.get(0).contains("S")) {
+                                    Person person = new Person();
+                                    for (int i = 0; i < list.size(); i++) {
+                                        person.set(i, list.get(i));
+                                    }
+                                    personList.add(person);
                                 }
-                                personList.add(person);
                             }
+                            danhBaManagement = new DanhBaManagement(personList);
                         } catch (IOException e) {
                             e.printStackTrace();
                         } finally {
