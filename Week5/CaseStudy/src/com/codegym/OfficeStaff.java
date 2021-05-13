@@ -39,6 +39,6 @@ public abstract class OfficeStaff extends Employee implements Serializable {
         return getHardSalary() + calculateBonus() - calculateFine();
     }
     public void display(){
-        System.out.printf("%-10s%-15s%-10s%-10s%-18d%-12d%-10d\n",this.getId(), this.getName(), this.getRole(), this.getAddress(), this.getWorkDaysInMonth(), this.getHardSalary(), this.getNumberOfTaskDone());
+        System.out.printf("%-10s%-15s%-3d%-10s%-10s%-18d%-12d%-10d\n",this.getId(), this.getName(), this.getAge(),this.getRole(), this.getAddress(), this.getWorkDaysInMonth(), this.getHardSalary(), this.getNumberOfTaskDone());
     }
 }

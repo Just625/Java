@@ -3,7 +3,7 @@ package com.codegym;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.ZoneId;
-import java.util.Date;
+import java.util.*;
 
 public abstract class Employee implements Serializable {
     private String id;
@@ -13,6 +13,15 @@ public abstract class Employee implements Serializable {
     private String address;
     private int workDaysInMonth = 0;
     private int hardSalary;
+    private List<Integer> dayAttend = new ArrayList<>();
+
+    public List<Integer> getDayAttend() {
+        return dayAttend;
+    }
+
+    public void setDayAttend(List<Integer> dayAttend) {
+        this.dayAttend = dayAttend;
+    }
 
     @Override
     public String toString() {
@@ -32,7 +41,23 @@ public abstract class Employee implements Serializable {
     }
 
     public void attend() {
-        workDaysInMonth++;
+        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
+        int day = calendar.get(Calendar.DATE);
+        if (dayAttend.isEmpty()) {
+            workDaysInMonth++;
+            dayAttend.add(day);
+            System.out.println("Completed");
+        } else {
+            for (Integer ele : dayAttend) {
+                if (ele != day) {
+                    workDaysInMonth++;
+                    dayAttend.add(day);
+                    System.out.println("Completed");
+                } else {
+                    System.err.println("Can only attend once a day. Don't try to cheat");
+                }
+            }
+        }
     }
 
     public abstract int calculateFinalSalary();

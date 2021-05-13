@@ -25,7 +25,7 @@ public class OfficeStaffManagement implements IGeneralInterface<OfficeStaff> {
 
     @Override
     public void showAll() {
-        System.out.printf("%-10s%-15s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
+        System.out.printf("%-10s%-15s%-3s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Age","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
         for (OfficeStaff staff : officeStaffList) {
             staff.display();
         }
@@ -64,7 +64,7 @@ public class OfficeStaffManagement implements IGeneralInterface<OfficeStaff> {
         for (OfficeStaff staff : officeStaffList) {
             totalSalary += staff.calculateFinalSalary();
         }
-        System.out.println(totalSalary);
+        System.out.println("Total salary: "+totalSalary);
     }
 
     public void showFrequency() {

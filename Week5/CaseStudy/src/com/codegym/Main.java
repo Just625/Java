@@ -4,14 +4,19 @@ import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
+
+    public static final String ENTER_YOUR_CHOICE = "Enter your choice:";
+    public static final String ENTER_USER_NAME = "Enter user name";
+    public static final String ENTER_PASS_WORD = "Enter pass word";
+    public static final String INVALID_CHOICE = "Invalid choice";
+    public static final String ENTER_FILE_PATH = "enter file path:";
+    public static final String TASK_LIST_UPDATED = "Task list updated";
+    public static final String STAFF_FILE_LOCATION = "data\\staff.txt";
 
     public static void main(String[] args) {
         // write your code here
@@ -28,14 +33,14 @@ public class Main {
         boolean isNotSignedIn = true;
         do {
             showLoginMenu();
-            System.out.println("Enter your choice:");
+            System.out.println(ENTER_YOUR_CHOICE);
             loginChoice = src.nextInt();
             switch (loginChoice) {
                 case 1: {
                     src.nextLine();
-                    System.out.println("Enter user name");
+                    System.out.println(ENTER_USER_NAME);
                     String userName = src.nextLine();
-                    System.out.println("Enter pass word");
+                    System.out.println(ENTER_PASS_WORD);
                     String passWord = src.nextLine();
                     String roleById = accountManagement.getRoleById(userName, passWord);
                     if (roleById.equals("admin")) {
@@ -43,17 +48,17 @@ public class Main {
                         int choice;
                         do {
                             showAdminMenu();
-                            System.out.println("Enter your choice:");
+                            System.out.println(ENTER_YOUR_CHOICE);
                             choice = src.nextInt();
                             switch (choice) {
                                 case 1: {
                                     int officeChoice;
                                     do {
                                         showOfficeStaffMenu();
-                                        System.out.println("Enter your choice:");
+                                        System.out.println(ENTER_YOUR_CHOICE);
                                         officeChoice = src.nextInt();
                                         if (officeChoice < 0 || officeChoice > 11) {
-                                            System.err.println("Invalid choice");
+                                            System.err.println(INVALID_CHOICE);
                                         }
                                         switch (officeChoice) {
                                             case 1: {
@@ -81,19 +86,17 @@ public class Main {
                                                 break;
                                             }
                                             case 7: {
-                                                System.out.println(oFManagement.showMVPOfficeStaff());
+                                                System.out.printf("%-10s%-15s%-3s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Age","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
+                                                oFManagement.showMVPOfficeStaff().display();
                                                 break;
                                             }
                                             case 8: {
-                                                src.nextLine();
-                                                System.out.println("enter file path:");
-                                                String filePath = src.nextLine();
-                                                oFManagement.writeToFile(filePath);
+                                                oFManagement.writeToFile(STAFF_FILE_LOCATION);
                                                 break;
                                             }
                                             case 9: {
                                                 src.nextLine();
-                                                System.out.println("enter file path:");
+                                                System.out.println(ENTER_FILE_PATH);
                                                 String filePath = src.nextLine();
                                                 oFManagement.readFromFile(filePath);
                                                 break;
@@ -101,7 +104,7 @@ public class Main {
                                             case 10: {
                                                 try {
                                                     taskList = crawlTaskFromWebsite();
-                                                    System.out.println("Task list updated");
+                                                    System.out.println(TASK_LIST_UPDATED);
                                                 } catch (IOException e) {
                                                     e.printStackTrace();
                                                 }
@@ -120,10 +123,10 @@ public class Main {
                                     int nonOfficeChoice;
                                     do {
                                         showNonOfficeStaffMenu();
-                                        System.out.println("Enter your choice:");
+                                        System.out.println(ENTER_YOUR_CHOICE);
                                         nonOfficeChoice = src.nextInt();
                                         if (nonOfficeChoice < 0 || nonOfficeChoice > 5) {
-                                            System.out.println("Invalid choice");
+                                            System.out.println(INVALID_CHOICE);
                                         }
                                         switch (nonOfficeChoice) {
                                             case 1: {
@@ -161,7 +164,7 @@ public class Main {
                             OfficeStaff currentEmployee = oFManagement.getOfficeStaffByIndex(currentEmployeeIndex);
                             switch (employeeChoice) {
                                 case 1: {
-                                    System.out.printf("%-10s%-15s%-10s%-10s%-18s%-12s%-10s\n","Id","Name","Role","Address", "WorkDaysInMonth","HardSalary","NumberOfTaskDone");
+                                    System.out.printf("%-10s%-15s%-3s%-10s%-10s%-18s%-12s%-10s\n", "Id", "Name", "Age", "Role", "Address", "WorkDaysInMonth", "HardSalary", "NumberOfTaskDone");
                                     currentEmployee.display();
                                     break;
                                 }
@@ -188,7 +191,7 @@ public class Main {
                             }
                         } while (employeeChoice != 0);
                     } else {
-                        System.out.println(roleById);
+                        System.err.println(roleById);
                     }
                     break;
                 }
@@ -209,7 +212,7 @@ public class Main {
         } else {
             System.out.println("Pick a task from the list to do");
             showTaskListString(taskListString);
-            System.out.println("Enter your choice:");
+            System.out.println(ENTER_YOUR_CHOICE);
             int taskChoice = src.nextInt();
             currentEmployee.work(taskListString.get(taskChoice));
             taskListString.remove(taskChoice);
@@ -279,7 +282,6 @@ public class Main {
 
     private static void attendDaily(OfficeStaffManagement oFManagement, int currentEmployeeIndex) {
         oFManagement.getOfficeStaffByIndex(currentEmployeeIndex).attend();
-        System.out.println("Done");
     }
 
     private static void editPersonalInformation(Scanner src, OfficeStaffManagement oFManagement, int currentEmployeeIndex) {
@@ -355,7 +357,7 @@ public class Main {
         String id = src.nextLine();
         Account newAccount = new Account(userName, passWord, id, "employee");
         if (accountManagement.checkDuplicate(newAccount)) {
-            System.out.println("Account already available");
+            System.err.println(("Account already available"));
         } else {
             accountManagement.addAccount(newAccount);
             System.out.println("Account created");
@@ -417,7 +419,12 @@ public class Main {
             System.out.println("Can't find office staff with this id" + id);
         } else {
             System.out.println("Enter new info");
-            OfficeStaff newOfficeStaff = getOfficeStaffInfo(src,officeStaffManagement);
+//            System.out.println("Same as that last one? Type (Y) at id");
+//            String confirmWord = src.nextLine();
+            OfficeStaff newOfficeStaff = getOfficeStaffInfo(src, officeStaffManagement);
+//            if(confirmWord.equals("Y")){
+//                newOfficeStaff.setId(id);
+//            }
             officeStaffManagement.update(index, newOfficeStaff);
             System.out.println("Update completed");
         }
@@ -454,13 +461,14 @@ public class Main {
 
     private static OfficeStaff getOfficeStaffInfo(Scanner src, OfficeStaffManagement officeStaffManagement) {
         String id;
-        boolean isDuplicateID = false;
+        boolean isDuplicateID;
         do {
+            isDuplicateID = false;
             System.out.println("Enter id");
             id = src.nextLine();
             List<OfficeStaff> officeStaffList = officeStaffManagement.getOfficeStaffList();
-            for (int i = 0; i < officeStaffList.size(); i++) {
-                if (officeStaffList.get(i).getId().equals(id)) {
+            for (OfficeStaff officeStaff : officeStaffList) {
+                if (officeStaff.getId().equals(id)) {
                     isDuplicateID = true;
                     System.err.println("Duplicate ID, please choose another ID");
                     break;
