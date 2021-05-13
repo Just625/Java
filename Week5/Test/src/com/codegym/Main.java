@@ -17,7 +17,7 @@ public class Main {
         // write your code here
         Scanner src = new Scanner(System.in);
         List<Person> personList = new ArrayList<>();
-        personList.add(new Person("0971234567", "CodeG", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234567", "CodeGym", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
         personList.add(new Person("0971234568", "Bạn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
         DanhBaManagement danhBaManagement = new DanhBaManagement(personList);
         int choice;
@@ -51,7 +51,7 @@ public class Main {
                     System.out.println("Press Y to continue");
                     String confirmWord = src.nextLine();
                     if (confirmWord.equals("Y")) {
-                        personList = null;
+                        personList = new ArrayList<>();
                         List<String> list = null;
                         BufferedReader br = null;
                         try {
@@ -81,7 +81,7 @@ public class Main {
                 default:
                     throw new IllegalStateException("Unexpected value: " + choice);
             }
-        } while (choice != 0);
+        } while (choice != 8);
     }
 
     public static List<String> parseCsvLine(String csvLine) {
