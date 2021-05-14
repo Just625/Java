@@ -63,6 +63,16 @@ public class Main {
         List<Person> personList = new ArrayList<>();
         personList.add(new Person("0971234567", "Codm", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
         personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234567", "Codm", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
         return personList;
     }
 

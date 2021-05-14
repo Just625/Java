@@ -38,24 +38,25 @@ public class DanhBaManagement implements IGeneralInterface<Person> {
     @Override
     public void display() {
         Scanner src = new Scanner(System.in);
-        for (Person person : personList) {
-            System.out.println("Phone number: " + person.getPhoneNumber());
-        }
-        src.nextLine();
-        for (Person person : personList) {
-            System.out.println("Group: " + person.getGroup());
-        }
-        src.nextLine();
-        for (Person person : personList) {
-            System.out.println("Name: " + person.getName());
-        }
-        src.nextLine();
-        for (Person person : personList) {
-            System.out.println("Gender: " + person.getGender());
-        }
-        src.nextLine();
-        for (Person person : personList) {
-            System.out.println("Address: " + person.getAddress());
+        if (personList.size() <= 5) {
+            for (Person person : personList) {
+                System.out.println(person);
+            }
+        } else if (personList.size() == 0) {
+            System.out.println("There is no person in the list right now");
+        } else {
+            int count = 0;
+            for (Person person : personList) {
+                if (count%5!=0 || count == 0) {
+                    System.out.println(person);
+                    count++;
+                }else{
+                    System.out.println("Press enter to show next 5 info");
+                    src.nextLine();
+                    count = 1;
+                    System.out.println(person);
+                }
+            }
         }
     }
 
@@ -81,16 +82,17 @@ public class DanhBaManagement implements IGeneralInterface<Person> {
         }
         return index;
     }
-    public void findCloseExactName(String name){
+
+    public void findCloseExactName(String name) {
         name = name.toLowerCase();
         boolean isFind = false;
-        for(Person person:personList){
-            if(person.getName().toLowerCase().contains(name)){
+        for (Person person : personList) {
+            if (person.getName().toLowerCase().contains(name)) {
                 System.out.println(person);
                 isFind = true;
             }
         }
-        if(!isFind){
+        if (!isFind) {
             System.out.println("Can not find that name");
         }
     }
