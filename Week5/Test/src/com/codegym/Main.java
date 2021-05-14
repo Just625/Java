@@ -1,10 +1,9 @@
 package com.codegym;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,12 +12,15 @@ import java.util.regex.Pattern;
 
 public class Main {
 
+    public static final String FILE_PATH = "C:\\Users\\Admin\\Desktop\\CodeGym\\Java\\Java\\Week5\\Test\\data\\contacts.csv";
+    public static final String COMMA = ",";
+    public static final String FILE_HEADER = "Số điện thoại, Nhóm, Họ tên, Giới tính, Địa chỉ, Ngày sinh, Email";
+    public static final String WRONG_PHONE_FORMAT = "Wrong phone number format, please try again";
+
     public static void main(String[] args) {
         // write your code here
         Scanner src = new Scanner(System.in);
-        List<Person> personList = new ArrayList<>();
-        personList.add(new Person("0971234567", "Codm", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
-        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        List<Person> personList = initPersonList();
         DanhBaManagement danhBaManagement = new DanhBaManagement(personList);
         int choice;
         do {
@@ -46,44 +48,95 @@ public class Main {
                     break;
                 }
                 case 6: {
-                    src.nextLine();
-                    System.out.println("Do you want to erase all memory");
-                    System.out.println("Press Y to continue");
-                    String confirmWord = src.nextLine();
-                    if (confirmWord.equals("Y")) {
-                        personList = new ArrayList<>();
-                        List<String> list = null;
-                        BufferedReader br = null;
-                        try {
-                            String line;
-                            br = new BufferedReader(new FileReader("C:\\Users\\Admin\\Desktop\\CodeGym\\Java\\Java\\Week5\\Test\\data\\contacts.csv"));
-                            int count = 0;
-                            while ((line = br.readLine()) != null) {
-                                list = parseCsvLine(line);
-                                if (!list.get(0).contains("S")) {
-                                    Person person = new Person();
-                                    for (int i = 0; i < list.size(); i++) {
-                                        person.set(i, list.get(i));
-                                    }
-                                    personList.add(person);
-                                }
-                            }
-                            danhBaManagement = new DanhBaManagement(personList);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        } finally {
-                            try {
-                                if (br != null)
-                                    br.close();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
+                    danhBaManagement = readFromFile(src, danhBaManagement);
+                    break;
+                }
+                case 7:{
+                    writeToFile(danhBaManagement);
                     break;
                 }
             }
         } while (choice != 8);
+    }
+
+    private static List<Person> initPersonList() {
+        List<Person> personList = new ArrayList<>();
+        personList.add(new Person("0971234567", "Codm", "Nguyễn Văn A", "Nam", "Mỹ Đình - Hà Nội", "1989-01-01", "vana@codegym.vn"));
+        personList.add(new Person("0971234568", "Bn bè", "Nguyễn Thị B", "Nữ", "Thanh Xuân - Hà Nội", "1990-01-01", "vana@codegym.vn"));
+        return personList;
+    }
+
+    private static void writeToFile(DanhBaManagement danhBaManagement) {
+        FileWriter fileWriter =null;
+        try{
+            fileWriter = new FileWriter(FILE_PATH);
+            fileWriter.append(FILE_HEADER);
+            fileWriter.append("\n");
+            for(Person person: danhBaManagement.getDanhBaList()){
+                fileWriter.append(person.getPhoneNumber());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getGroup());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getName());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getGender());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getAddress());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getdOB());
+                fileWriter.append(COMMA);
+                fileWriter.append(person.getEmail());
+                fileWriter.append("\n");
+            }
+            System.out.println("Write to file completed");
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally {
+            try {
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private static DanhBaManagement readFromFile(Scanner src, DanhBaManagement danhBaManagement) {
+        List<Person> personList;
+        src.nextLine();
+        System.out.println("Do you want to erase all memory");
+        System.out.println("Press Y to continue");
+        String confirmWord = src.nextLine();
+        if (confirmWord.equals("Y")) {
+            personList = new ArrayList<>();
+            List<String> list;
+            BufferedReader br = null;
+            try {
+                String line;
+                br = new BufferedReader(new FileReader(FILE_PATH));
+                while ((line = br.readLine()) != null) {
+                    list = parseCsvLine(line);
+                    if (!list.get(0).contains("S")) {
+                        Person person = new Person();
+                        for (int i = 0; i < list.size(); i++) {
+                            person.set(i, list.get(i));
+                        }
+                        personList.add(person);
+                    }
+                }
+                danhBaManagement = new DanhBaManagement(personList);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (br != null)
+                        br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return danhBaManagement;
     }
 
     public static List<String> parseCsvLine(String csvLine) {
@@ -128,7 +181,7 @@ public class Main {
                     NotAvailable = false;
                 }
             } else if (!phoneNumber.isEmpty()) {
-                System.err.println("Wrong phone number format, please try again");
+                System.err.println(WRONG_PHONE_FORMAT);
             } else {
                 NotAvailable = false;
             }
@@ -157,9 +210,11 @@ public class Main {
                     String dOB = checkEmptyInput(src, "date of birth: ");
                     String email = checkValidEmail(src);
                     danhBaManagement.update(index, new Person(phoneNumber, group, name, gender, address, dOB, email));
+                    NotAvailable = false;
+                    phoneNumber = "";
                 }
             } else if (!phoneNumber.isEmpty()) {
-                System.err.println("Wrong phone number format, please try again");
+                System.err.println(WRONG_PHONE_FORMAT);
             } else {
                 NotAvailable = false;
             }
@@ -178,7 +233,7 @@ public class Main {
             if (matcher.find()) {
                 isNotValidPhoneNumber = false;
             } else {
-                System.err.println("Wrong phone number format");
+                System.err.println(WRONG_PHONE_FORMAT);
             }
         } while (isNotValidPhoneNumber);
         String group = checkEmptyInput(src, "group:");

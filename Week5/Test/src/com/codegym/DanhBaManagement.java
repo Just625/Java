@@ -2,7 +2,6 @@ package com.codegym;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DanhBaManagement implements IGeneralInterface<Person> {
@@ -91,7 +90,7 @@ public class DanhBaManagement implements IGeneralInterface<Person> {
                 isFind = true;
             }
         }
-        if(isFind == false){
+        if(!isFind){
             System.out.println("Can not find that name");
         }
     }
