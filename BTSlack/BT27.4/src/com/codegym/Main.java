@@ -16,7 +16,7 @@ public class Main {
         do {
             showMenu();
             choice = src.nextInt();
-            if (choice < 0 ||choice > 9) {
+            if (choice < 0 ||choice > 10) {
                 System.out.println("Invalid choice");
             }
             switch (choice) {

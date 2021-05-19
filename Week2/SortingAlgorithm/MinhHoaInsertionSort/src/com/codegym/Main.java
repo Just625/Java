@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        int[] list = {1, 9, 6, -8, 0, 4};
+        int[] list = {8,6,34,22,11};
         displayArr(list);
         insertionSort(list);
     }

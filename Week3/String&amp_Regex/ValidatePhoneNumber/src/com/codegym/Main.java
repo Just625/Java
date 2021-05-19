@@ -12,6 +12,7 @@ public class Main {
         while (true) {
             System.out.println("enter phone number to check:");
             String str = src.nextLine();
+
             String regex = "\\([0-9]{2}\\)-\\(0[0-9]{9}\\)";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(str);

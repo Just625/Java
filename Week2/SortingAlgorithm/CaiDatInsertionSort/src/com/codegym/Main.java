@@ -22,6 +22,7 @@ public class Main {
             int index = i;
             int temp = list[index];
             while (index > 0) {
+                //Muon thay doi thu tu thi thay doi dau la duoc
                 if (temp < list[index - 1]) {
                     list[index] = list[index - 1];
                 } else {

@@ -1,0 +1,2 @@
+MSV	Name	Hometown	Score
+01	Quan	Ha Noi	9

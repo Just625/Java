@@ -105,15 +105,15 @@ public class PaperManagement {
         }
     }
 
-    public int binarySort(int left, int right, String code) {
+    public int binarySearch(int left, int right, String code) {
         int middle = (left + right) / 2;
         while (left <= right) {
             if (list.get(middle).getCode().equals(code)) {
                 return middle;
             } else if (list.get(middle).getCode().charAt(0) < code.charAt(0)) {
-                return binarySort(middle + 1, right, code);
+                return binarySearch(middle + 1, right, code);
             } else {
-                return binarySort(left, middle - 1, code);
+                return binarySearch(left, middle - 1, code);
             }
         }
         return -1;
@@ -124,7 +124,7 @@ public class PaperManagement {
         this.sortList();
         System.out.println(ENTER_CODE);
         String code = src.nextLine();
-        int index = binarySort(0, list.size() - 1, code);
+        int index = binarySearch(0, list.size() - 1, code);
         if (index == -1) {
             System.out.println(NOT_FOUND_MSG);
         } else {

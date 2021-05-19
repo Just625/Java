@@ -1,0 +1,14 @@
+
+Hinh ve goi java.io tron slide:
+Mau` cam la voi dong` byte
+Mau` xanh la` voi dong` character
+
+-absolute path vs canonical path
+-1 so phuong thuc can nho cua lop File: 
+ + Constructor: File(String path);
+ + mkdir();
+ vd: File f = new File("New Folder");
+     f.mkdir();
+ + getAbsolutePath();
+ + getName();
+ + delete(); Xoa tung file 1, xoa ca thu muc thi phai dung vong lap for

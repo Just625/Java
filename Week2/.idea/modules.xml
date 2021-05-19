@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutomatedTesting_TDD/AbsoluteValue/AbsoluteValue.iml" filepath="$PROJECT_DIR$/AutomatedTesting_TDD/AbsoluteValue/AbsoluteValue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract_class&amp;Interface/Animal/Animal.iml" filepath="$PROJECT_DIR$/Abstract_class&amp;Interface/Animal/Animal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CleanCode_Refactoring/LT13.4/LT13.4.iml" filepath="$PROJECT_DIR$/CleanCode_Refactoring/LT13.4/LT13.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutomatedTesting_TDD/NgayTiepTheo/NgayTiepTheo.iml" filepath="$PROJECT_DIR$/AutomatedTesting_TDD/NgayTiepTheo/NgayTiepTheo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CleanCode_Refactoring/TachBien/TachBien.iml" filepath="$PROJECT_DIR$/CleanCode_Refactoring/TachBien/TachBien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CleanCode_Refactoring/TachPhuongThuc/TachPhuongThuc.iml" filepath="$PROJECT_DIR$/CleanCode_Refactoring/TachPhuongThuc/TachPhuongThuc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CleanCode_Refactoring/TennisGame/TennisGame.iml" filepath="$PROJECT_DIR$/CleanCode_Refactoring/TennisGame/TennisGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CleanCode_Refactoring/Var_Constant/Var_Constant.iml" filepath="$PROJECT_DIR$/CleanCode_Refactoring/Var_Constant/Var_Constant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Week2.iml" filepath="$PROJECT_DIR$/.idea/Week2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceColorable/interfaceColorable.iml" filepath="$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceColorable/interfaceColorable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceComparable/interfaceComparable.iml" filepath="$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceComparable/interfaceComparable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceComparator/interfaceComparator.iml" filepath="$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceComparator/interfaceComparator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceResizeable/interfaceResizeable.iml" filepath="$PROJECT_DIR$/Abstract_class&amp;Interface/interfaceResizeable/interfaceResizeable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutomatedTesting_TDD/junit-simple-calculator-master/junit-simple-calculator-master.iml" filepath="$PROJECT_DIR$/AutomatedTesting_TDD/junit-simple-calculator-master/junit-simple-calculator-master.iml" />
+    </modules>
+  </component>
+</project>

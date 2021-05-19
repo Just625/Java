@@ -15,6 +15,7 @@ public class Reader {
             System.out.printf("%-2s %-4s %s\n", "ID", "Code", "Name");
             reader.readLine();
             while ((line = reader.readLine()) != null) {
+//                System.out.println(reader.read());
                 String[] arr = line.split(",");
                 System.out.printf("%-2s %-4s %s\n",arr[0], arr[1], arr[2]);
             }

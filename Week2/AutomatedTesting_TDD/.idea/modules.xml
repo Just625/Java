@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AbsoluteValue/AbsoluteValue.iml" filepath="$PROJECT_DIR$/AbsoluteValue/AbsoluteValue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AutomatedTesting_TDD.iml" filepath="$PROJECT_DIR$/.idea/AutomatedTesting_TDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LT14.4/LT14.4.iml" filepath="$PROJECT_DIR$/LT14.4/LT14.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NgayTiepTheo/NgayTiepTheo.iml" filepath="$PROJECT_DIR$/NgayTiepTheo/NgayTiepTheo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/junit-simple-calculator-master/junit-simple-calculator-master.iml" filepath="$PROJECT_DIR$/junit-simple-calculator-master/junit-simple-calculator-master.iml" />
+    </modules>
+  </component>
+</project>
