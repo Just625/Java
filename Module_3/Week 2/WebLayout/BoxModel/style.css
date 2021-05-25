@@ -1,0 +1,23 @@
+#main{
+    height: 300px;
+    width: 800px;
+    border: 10px outset #7FFF00;
+    border-right-color: aqua;
+    border-bottom-color: blue;
+    border-left-color: #8A2BE2;
+    padding: 10px;
+    margin:0 auto;
+}
+.para{
+    border: 3px dotted #890D0D;
+    padding:10px;
+}
+#first-para{
+    margin-bottom:20px;
+}
+#second-para{
+    margin-bottom:40px;
+}
+#third-para{
+    margin-bottom:60px;
+}
