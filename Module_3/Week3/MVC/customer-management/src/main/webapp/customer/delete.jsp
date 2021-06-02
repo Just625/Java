@@ -23,15 +23,15 @@
             <table>
                 <tr>
                     <td>Name:</td>
-                    <td> ${requestScope["customer"].name}</td>
+                    <td> ${customer.name}</td>
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td> ${requestScope["customer"].email}</td>
+                    <td> ${customer.email}</td>
                 </tr>
                 <tr>
                     <td>Address:</td>
-                    <td> ${requestScope["customer"].address}</td>
+                    <td> ${customer.address}</td>
                 </tr>
                 <tr>
                     <td></td>
