@@ -16,8 +16,14 @@
 <p>
     <a href="/users?action=create">Create new customer</a>
 </p>
+<form action="">
+    <input type="text" name="q" placeholder="Search">
+    <button>Search by address</button>
+</form>
+<button><a href="/users?sort=true">Sort</a></button>
 <table border="=1">
     <tr>
+        <td>ID</td>
         <td>Name</td>
         <td>Email</td>
         <td>Country</td>
@@ -26,7 +32,8 @@
     </tr>
     <c:forEach  items="${users}" var="user">
         <tr>
-            <td><a href="/users?action=view&id=${user.id}"><c:out value="${user.name}"></c:out></a></td>
+            <td><c:out value="${user.id}"></c:out></td>
+            <td><c:out value="${user.name}"></c:out></td>
             <td>${user.email}</td>
             <td>${user.country}</td>
             <td><a href="/users?action=edit&id=${user.id}">Edit</a></td>

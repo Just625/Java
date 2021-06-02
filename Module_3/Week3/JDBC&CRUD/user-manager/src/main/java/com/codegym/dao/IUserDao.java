@@ -11,4 +11,6 @@ public interface IUserDao {
     List<User> selectAllUsers();
     boolean deleteUser(int id) throws SQLException;
     boolean editUser(int id, User user) throws SQLException;
+    List<User> searchByCountry(String country);
+    List<User> sortByName();
 }

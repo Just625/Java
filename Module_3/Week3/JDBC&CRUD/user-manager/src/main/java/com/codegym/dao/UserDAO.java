@@ -16,6 +16,8 @@ public class UserDAO implements IUserDao {
     public static final String SELECT__USERS_BY_ID = "select * from users where id=?";
     public static final String DELETE_USERS_BY_ID = "delete from users where id = ?";
     public static final String UPDATE_USERS_BY_ID = "update users set name= ?,email=?,country=? where id =?;";
+    public static final String SELECT__USERS_BY_COUNTRY = "select * from users where country like ?";
+    public static final String SORT_BY_NAME = "select * from users order by name desc";
 
     public UserDAO() {
     }
@@ -101,6 +103,47 @@ public class UserDAO implements IUserDao {
         preparedStatement.setInt(4, id);
         rowUpdated = preparedStatement.executeUpdate();
         return rowUpdated != 0;
+    }
+
+    @Override
+    public List<User> searchByCountry(String country) {
+        List<User> userList = new ArrayList<>();
+        Connection connection = SQLConnection.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SELECT__USERS_BY_COUNTRY);
+            preparedStatement.setString(1,"%"+country+"%");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email= resultSet.getString("email");
+                String country1 = resultSet.getString("country");
+                userList.add(new User(id,name,email,country1));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return userList;
+    }
+
+    @Override
+    public List<User> sortByName() {
+        List<User> userList = new ArrayList<>();
+        Connection connection = SQLConnection.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SORT_BY_NAME);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()){
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email= resultSet.getString("email");
+                String country1 = resultSet.getString("country");
+                userList.add(new User(id,name,email,country1));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return userList;
     }
 
     public void printSQLException(SQLException ex) {
