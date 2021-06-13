@@ -1,0 +1,4 @@
+com/codegym/model/WordList.java
+ com.codegym.model.WordList
+com/codegym/controller/DictionaryController.java
+ com.codegym.controller.DictionaryController
