@@ -13,10 +13,11 @@ public class CalculatorController {
         return "index";
     }
 
-    @PostMapping("/calculator")
+    @PostMapping("/")
     public ModelAndView calculate(@RequestParam(required = false) double firstNumb, double secondNumb, String operator) {
         ModelAndView modelAndView = new ModelAndView("index");
         double result = 0;
+        String error = "";
         switch (operator) {
             case "Addition": {
                 result = firstNumb + secondNumb;
@@ -32,15 +33,18 @@ public class CalculatorController {
             }
             case "Division": {
                 if (secondNumb == 0) {
-                    modelAndView.addObject("error-msg","can not divided by 0");
+                    error = "Can not divide by 0";
                 } else {
                     result = firstNumb / secondNumb;
                 }
                 break;
             }
         }
-        modelAndView.addObject("result", result);
-        modelAndView.addObject("operator", operator);
+        modelAndView.addObject("error",error);
+        if(error.equals("")){
+            modelAndView.addObject("result", result);
+            modelAndView.addObject("operator", operator);
+        }
         modelAndView.addObject("firstNumb", firstNumb);
         modelAndView.addObject("secondNumb", secondNumb);
         return modelAndView;
