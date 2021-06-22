@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cc8af4a-0b42-479d-a6c4-dc247258a9ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Week2/JPA/customer-management/.idea/customer-management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/JPA/customer-management/.idea/modules/customer-management.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/JPA/personal-blog/.idea/modules/personal-blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/modules/validate-register-form.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/configuration/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/configuration/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/controller/FormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/java/com/codegym/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week2/Validation/validate-register-form/src/main/webapp/WEB-INF/views/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-model/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-model/.idea/spring-user-model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/ThiThucHanh/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week 2/JSP_JSTL/simple_calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week 2/JSP_JSTL/simple_calculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week 2/Servlet/Discount/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week 2/Servlet/Discount/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week 2/Servlet/post_get/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week 2/Servlet/post_get/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/classicmodels.fG2wDg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/classicmodels.fG2wDg.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/demo.4_0uAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/demo.4_0uAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/.idea/dataSources/a487aa69-29be-4a31-80a5-49f04584a275/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/build/classes/java/main/com/codegym/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/build/classes/java/main/com/codegym/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/java/com/codegym/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/java/com/codegym/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/java/com/codegym/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/java/com/codegym/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/webapp/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/JDBC&amp;CRUD/user-manager/src/main/webapp/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_3/Week3/MVC/product-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/paging-sorting1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Spring-data-repository/quan-ly-tinh/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/modules/validate-infor-user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/classes/java/main/com/codegym/configuration/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/classes/java/main/com/codegym/configuration/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/classes/java/main/com/codegym/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/classes/java/main/com/codegym/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/libs/validate-infor-user-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/java/com/codegym/configuration/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/java/com/codegym/configuration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/java/com/codegym/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/java/com/codegym/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/webapp/WEB-INF/views/result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Spring-data-repository/validate-infor-user/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/Validation/custome-phone-validation/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week2/Validation/custome-phone-validation/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/customer-management.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources/9d55f09e-b0ac-4f9a-b042-41ddfc86c421.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources/9d55f09e-b0ac-4f9a-b042-41ddfc86c421/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources/9d55f09e-b0ac-4f9a-b042-41ddfc86c421/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources/9d55f09e-b0ac-4f9a-b042-41ddfc86c421/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/dataSources/9d55f09e-b0ac-4f9a-b042-41ddfc86c421/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/modules/customer-management.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/configuration/AppConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/configuration/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/repository/IGeneralRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/classes/java/main/com/codegym/cms/service/IGeneralService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/libs/customer-management-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/configuration/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/configuration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/repository/IGeneralRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/java/com/codegym/cms/service/IGeneralService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/WEB-INF/views/customer/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/WEB-INF/views/customer/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/WEB-INF/views/customer/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/WEB-INF/views/customer/error-404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/WEB-INF/views/customer/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/customer-management/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/.idea/modules/personal-blog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/src/main/java/com/codegym/cms/configuration/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/src/main/java/com/codegym/cms/configuration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/src/main/java/com/codegym/cms/model/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/src/main/java/com/codegym/cms/repository/IBlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/personal-blog/src/main/webapp/WEB-INF/views/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/cms.SYEBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/cms.SYEBAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/cms1.CKguAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/cms1.CKguAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/dataSources/414cac8b-0a43-42f9-a1c1-9c9294dd2012/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/configuration/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/configuration/AppInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/controller/CustomerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/repository/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/classes/java/main/com/codegym/cms/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/libs/store-procedue-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/configuration/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/configuration/AppInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/repository/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/repository/ICustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/java/com/codegym/cms/service/ICustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week2/store-procedue/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/build/classes/java/main/com/codegym/configuration/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/build/classes/java/main/com/codegym/configuration/AppConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/build/libs/UploadFile-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/build/libs/UploadFile-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/src/main/java/com/codegym/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadFile/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/UploadFile/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/java/com/codegym/configuration/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/java/com/codegym/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/java/com/codegym/controller/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/java/com/codegym/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/java/com/codegym/model/Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/java/com/codegym/service/ISettingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/java/com/codegym/service/ISettingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/java/com/codegym/service/SettingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/java/com/codegym/service/SettingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/webapp/WEB-INF/views/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/email/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc-form-tutorial/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc-form-tutorial/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-model/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-model/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-model/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-model/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-model/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-model/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/com/codegym/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/com/codegym/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/build/libs/email-validate-gradle-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_controller/email-validate-gradle/build/libs/email-validate-gradle-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_controller/test/.idea/modules/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tong_quan_Spring/SpringGreeting/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tong_quan_Spring/SpringGreeting/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tong_quan_Spring/dictionary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tong_quan_Spring/dictionary/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tong_quan_Spring/dictionary/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Tong_quan_Spring/dictionary/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tong_quan_Spring/money_converter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tong_quan_Spring/money_converter/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tong_quan_Spring/money_converter/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Tong_quan_Spring/money_converter/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1uIKPuEX4cxgAzybI08TpHzKRgH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cc8af4a-0b42-479d-a6c4-dc247258a9ad" name="Default Changelist" comment="" />
+      <created>1624347642745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624347642745</updated>
+      <workItem from="1624347644481" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

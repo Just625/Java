@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Input form</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<form th:action="@{/create}" method="post" th:object="${user}">
+    <div>
+        <label>First Name</label>
+        <input type="text" name="firstName" th:field="*{firstName}">
+        <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+    </div>
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName" th:field="*{lastName}">
+        <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
+    </div>
+    <div>
+        <label>Phone Number</label>
+        <input type="text" name="phoneNumber" th:field="*{phoneNumber}">
+        <span th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="number" name="age" th:field="*{age}">
+        <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></span>
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" th:field="*{email}">
+        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+    </div>
+    <div>
+        <button>Create</button>
+    </div>
+</form>
+</body>
+</html>
