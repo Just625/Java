@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<form th:object="${user}" th:action="@{/validateUser}" method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" name="name" id="name">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"> Name Error</span>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="text" th:field="*{age}" name="age" id="age">
+        <span th:if="${#fields.hasErrors('age')}" th:errors="*{age}"> age Error</span>
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
