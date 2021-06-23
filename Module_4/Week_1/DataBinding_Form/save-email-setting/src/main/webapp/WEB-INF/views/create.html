@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<body>
+<div th:if="${message}">
+    <p th:text="${message}"></p>
+</div>
+<h3>Settings</h3>
+<form th:action="@{/create}" method="post" th:object="${email}">
+    <div>
+        <label>Languages: </label>
+        <select th:field="*{language}">
+            <option th:each="l:${languages} " th:value="${l}" th:text="${l}"></option>
+        </select>
+    </div>
+    <div>
+        <label >Page size: </label>
+        <span>Show </span>
+        <select th:field="*{pageSize}">
+            <option th:each="s:${sizes}" th:value="${s}" th:text="${s}"></option>
+        </select>
+        <span> emails per page</span>
+    </div>
+    <div>
+        <label >Spams filter: </label>
+<!--        if the checkbox isn't checked, the hidden input is still successful and sent to the server but if the checkbox is checked it will override the hidden input before it.
+This way you don't have to keep track of which values in the posted data were expected to come from checkboxes.-->
+        <input type="hidden" name="filterValue" value="false">
+        <input type="checkbox" name="filterValue" id="isPresent" value="true" th:checked="*{isFilterSpammed}">
+        <span>Enable spams filter</span>
+    </div>
+    <div>
+        <label >Signature: </label>
+        <textarea th:field="*{signature}"  cols="30" rows="10"></textarea>
+    </div>
+    <button>Update</button>
+    <button type="reset">Cancel</button>
+</form>
+</body>
+</html>
