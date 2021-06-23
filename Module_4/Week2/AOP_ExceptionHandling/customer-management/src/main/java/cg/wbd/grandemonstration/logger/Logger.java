@@ -15,7 +15,7 @@ public class Logger {
         String className = joinPoint.getTarget().getClass().getSimpleName();
         String method = joinPoint.getSignature().getName();
         String args = Arrays.toString(joinPoint.getArgs());
-        System.out.println(String.format("[CMS]Có lỗi xảy ra: %s.%s%s: %s", className, method, args, e.getMessage()));
+        System.out.println(String.format("[CMS]Co loi  xay ra: %s.%s%s: %s", className, method, args, e.getMessage()));
 
     }
 }

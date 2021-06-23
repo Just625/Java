@@ -1,6 +1,7 @@
 package cg.wbd.grandemonstration.model;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Table(name = "Customers")
@@ -9,6 +10,7 @@ public class Customer implements Cloneable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotEmpty
     private String name;
     private String email;
     private String address;
