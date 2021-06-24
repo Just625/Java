@@ -21,9 +21,9 @@
       <tr th:each="product:${cart.shoppingCart}">
         <td th:text="${product.getKey().name}"></td>
         <td >
-          <a th:href="@{/add/__${product.getKey().id}__(action='show')}" th:text="${'+'}"></a>
+          <a th:href="@{/add/__${product.getKey().id}__(action='plus')}" th:text="${'+'}"></a>
           <span th:text="${product.getValue()}" ></span>
-          <a href="" th:text="${'-'}"></a>
+          <a th:href="@{/add/__${product.getKey().id}__(action='minus')}" th:text="${'-'}"></a>
         </td>
         <td th:text="${product.getKey().price}"></td>
       </tr>

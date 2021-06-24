@@ -31,8 +31,12 @@ public class ProductController {
         if(!productOptional.isPresent()){
             return "/error-404";
         }
-        if(action.equals("show")){
+        if(action.equals("plus")){
             cart.addProductToCart(productOptional.get());
+            return "redirect:/shopping-cart";
+        }
+        if(action.equals("minus")){
+            cart.decreaseQuantity(productOptional.get());
             return "redirect:/shopping-cart";
         }
         cart.addProductToCart(productOptional.get());
