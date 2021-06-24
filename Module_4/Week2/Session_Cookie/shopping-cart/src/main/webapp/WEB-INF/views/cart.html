@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+</head>
+<body>
+  <p>
+    <a href="/shop">Back to shop</a>
+  </p>
+<h1>Your cart</h1>
+  <form th:object="${cart}" th:action="@{/shop}" method="post">
+    <h3>Total Items: <span th:text="${cart.countItemQuantity()}"></span></h3>
+    <h3>Total Product: <span th:text="${cart.countProductQuantity()}"></span></h3>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr th:each="product:${cart.shoppingCart}">
+        <td th:text="${product.getKey().name}"></td>
+        <td >
+          <a th:href="@{/add/__${product.getKey().id}__(action='show')}" th:text="${'+'}"></a>
+          <span th:text="${product.getValue()}" ></span>
+          <a href="" th:text="${'-'}"></a>
+        </td>
+        <td th:text="${product.getKey().price}"></td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td></td>
+        <td th:text="${cart.totalPayment()}"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
