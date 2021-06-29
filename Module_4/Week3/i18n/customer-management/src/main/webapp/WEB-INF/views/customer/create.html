@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{list.create}"></title>
+</head>
+<body>
+<h1 th:text="#{list.create}"></h1>
+<p>
+    <a href="/customers" th:text="#{back_to_list}"></a>
+</p>
+<th:block th:if="${message}">
+    <p style="color:green" th:text="#{create.add_msg}"></p>
+</th:block>
+<form th:action="@{/create-customer}" method="post" th:object="${customer}">
+    <div>
+        <label for="firstName" th:text="#{firstName_label}">First Name</label>
+        <input type="text" id="firstName" name="firstName" th:field="*{firstName}">
+    </div>
+    <div>
+        <label for="lastName" th:text="#{lastName_label}"></label>
+        <input type="text" id="lastName" name="lastName" th:field="*{lastName}">
+    </div>
+    <div>
+        <button th:text="#{create.button}"></button>
+    </div>
+</form>
+</body>
+</html>
