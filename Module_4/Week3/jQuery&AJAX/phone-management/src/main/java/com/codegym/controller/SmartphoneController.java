@@ -34,6 +34,12 @@ public class SmartphoneController {
     public ResponseEntity<Iterable<Smartphone>> allPhones(){
         return new ResponseEntity<>(smartphoneService.findAll(),HttpStatus.OK);
     }
+    @GetMapping("/{id}")
+    public ResponseEntity<Smartphone> findById(@PathVariable Long id){
+        return new ResponseEntity<>(smartphoneService.findById(id).get(),HttpStatus.OK);
+    }
+
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Smartphone> deleteSmartPhone(@PathVariable Long id){
         Optional<Smartphone> smartphoneOptional = smartphoneService.findById(id);
@@ -42,5 +48,14 @@ public class SmartphoneController {
         }
         smartphoneService.remove(id);
         return new ResponseEntity<>(smartphoneOptional.get(),HttpStatus.NO_CONTENT);
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<Smartphone> editSmartPhone(@PathVariable Long id, @RequestBody Smartphone smartphone){
+        Optional<Smartphone>  smartphoneOptional = smartphoneService.findById(id);
+        if(!smartphoneOptional.isPresent()){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        smartphone.setId(smartphoneOptional.get().getId());
+        return new ResponseEntity<>(smartphoneService.save(smartphone),HttpStatus.OK);
     }
 }
