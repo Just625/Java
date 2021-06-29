@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{login.title}"></title>
+</head>
+<body>
+<h1 th:text="#{login.heading}"></h1>
+<div th:if="${message}">
+  <p style="color:green" th:text="#{login.success_msg}"></p>
+</div>
+<h3><a href="/error">Go to error page</a></h3>
+<span>Language:</span> <a href="?lang=en">English</a> | <a href="?lang=vi">Vietnamese</a>
+<form th:action="@{/login}" th:object="${user}" method="post">
+  <table>
+    <tr>
+      <td th:text="#{login.username_label}"></td>
+      <td><input type="text" th:field="*{userName}"></td>
+    </tr>
+    <tr>
+      <td th:text="#{login.password_label}"></td>
+      <td><input type="password" th:field="*{passWord}"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button th:text="#{login.submit_label}"></button></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
