@@ -44,23 +44,39 @@
             left: 12px;
             margin-bottom: 16px;
         }
+        #page{
+            width: 7%;
+            float: left;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
 <a href="/create">Write new blog</a>
+<form >
+    <label>Search by category: </label>
+    <input type="text" name="q">
+    <button>Search</button>
+</form>
 <h3>Blog list</h3>
-<div id="container" th:each="blog:${blogs}">
-    <a th:href="@{/__${blog.id}__}">
-        <p id="description" th:text="${blog.description}" style=""></p>
-    </a>
-
-    <p id="content" th:text="${blog.content}"></p>
-    <div id="btn">
-        <a th:href="@{/edit/__${blog.id}__}">Edit</a>
-        <span>/</span>
-        <a th:href="@{delete/__${blog.id}__}">Delete</a>
+    <div id="container" th:each="blog:${blogs}">
+        <a th:href="@{/__${blog.id}__}">
+            <p id="description" th:text="${blog.description}" style=""></p>
+        </a>
+        <p id="content" th:text="${blog.content}"></p>
+        <div id="btn">
+            <a th:href="@{/edit/__${blog.id}__}">Edit</a>
+            <span>/</span>
+            <a th:href="@{delete/__${blog.id}__}">Delete</a>
+        </div>
+        <p id="author"  th:text="'- '+${blog.author}"></p>
     </div>
-    <p id="author"  th:text="'- '+${blog.author}"></p>
+<div id="page">
+    <a th:href="@{'/blogs'(page=${blogs.number-1})}" th:if="${blogs.hasPrevious()}">Previous</a>
+    <span th:text="${blogs.number+1}"></span> / <span th:text="${blogs.totalPages}"></span>
+    <a th:href="@{'/blogs'(page=${blogs.number+1})}" th:if="${blogs.hasNext()}">Next</a>
 </div>
 </body>
 </html>

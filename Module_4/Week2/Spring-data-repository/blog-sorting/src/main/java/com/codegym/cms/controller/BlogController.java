@@ -5,13 +5,14 @@ import com.codegym.cms.model.Category;
 import com.codegym.cms.service.blog.IBlogService;
 import com.codegym.cms.service.category.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,6 +38,7 @@ public class BlogController {
     @PostMapping("/create")
     public ModelAndView saveBlog(@ModelAttribute("blog") Blog blog) {
         ModelAndView modelAndView = new ModelAndView("/blog/create");
+        blog.setDate(new Date());
         blogService.save(blog);
         modelAndView.addObject("blog", blog);
         modelAndView.addObject("message", "Blog created");
@@ -44,9 +46,15 @@ public class BlogController {
     }
 
     @GetMapping("/blogs")
-    public ModelAndView showBlogs() {
+    //Toi da 6 blog/trang, sap xep theo cot date tang dan
+    public ModelAndView showBlogs(@RequestParam("q") Optional<String> q, @PageableDefault(size = 6, sort = "date") Pageable pageable) {
         ModelAndView modelAndView = new ModelAndView("/blog/menu");
-        List<Blog> blogs = (List<Blog>) blogService.findAll();
+        Page<Blog> blogs;
+        if (q.isPresent()) {
+            blogs = blogService.findAllByDescriptionContaining(q.get(), pageable);
+        } else {
+            blogs = blogService.findAll(pageable);
+        }
         modelAndView.addObject("blogs", blogs);
         return modelAndView;
     }
@@ -70,7 +78,7 @@ public class BlogController {
         if (!blog.isPresent()) {
             return new ModelAndView("/error-404");
         } else {
-            return new ModelAndView("/blog/edit","blog", blog.get());
+            return new ModelAndView("/blog/edit", "blog", blog.get());
         }
     }
 

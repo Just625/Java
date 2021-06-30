@@ -1,6 +1,7 @@
 package com.codegym.cms.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name="blogs")
@@ -11,6 +12,23 @@ public class Blog {
     private String content;
     private String description;
     private String author;
+    private Date date;
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public Blog(String content, String description, String author, Category category) {
+        this.content = content;
+        this.description = description;
+        this.author = author;
+        this.category = category;
+    }
+
     @ManyToOne
     private Category category;
 
@@ -19,13 +37,6 @@ public class Blog {
     }
 
     public void setCategory(Category category) {
-        this.category = category;
-    }
-
-    public Blog(String content, String description, String author, Category category) {
-        this.content = content;
-        this.description = description;
-        this.author = author;
         this.category = category;
     }
 
