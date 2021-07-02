@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete product</title>
+</head>
+<body>
+<h3>Product info</h3>
+<a th:href="@{/products}">Back to product list</a>
+<form th:object="${product}" th:action="@{/delete}" method="post">
+    <input type="hidden" th:field="*{id}">
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td th:text="${product.name}"></td>
+        </tr>
+        <tr>
+            <th>Price:</th>
+            <td th:text="${product.price}"></td>
+        </tr>
+        <tr>
+            <th>Description:</th>
+            <td th:text="${product.description}"></td>
+        </tr>
+        <tr>
+            <th>Producer:</th>
+            <td th:text="${product.producer}"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Delete</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
