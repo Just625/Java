@@ -19,6 +19,6 @@ public class Logger {
 //        String args = Arrays.toString(joinPoint.getArgs());
         Object[] args1 = joinPoint.getArgs();
         Comment comment = (Comment) args1[0];
-        System.out.println(String.format("Lỗi rồi má ơi, nhập lại giùm con dữ liệu: Author:%s - Feed Back:%s - Date:%s: %s", comment.getAuthor(), comment.getFeedBack(), comment.getDates(), e.getMessage()));
+        System.out.println(String.format("Loi roi ma oi, nhap lai du lieu gium con: Author:%s - Feed Back:%s - Date:%s: %s", comment.getAuthor(), comment.getFeedBack(), comment.getDates(), e.getMessage()));
     }
 }
