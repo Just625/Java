@@ -5,20 +5,23 @@
     <title>Delete</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body style="text-align: center;">
 <h3>Erase <span th:text="${city.name}"></span><span> City</span></h3>
-<h5>Erase this city</h5>
+<h5></h5>
 <p>Are you sure you want to delete <span th:text="${city.name}"></span><span> City</span></p>
 <form th:action="@{/delete/__${city.id}__}" method="post">
-  <button class="btn btn-danger">
+  <button class="btn btn-danger" style="position: absolute;
+    top: 72px;
+    left: 44%;
+    width: 71px;
+    padding: 6px;">
     Delete
   </button>
 </form>
-<button type="button" class="btn btn-secondary" style="    position: absolute;
-    top: 111px;
-    left: 74px;
+<button type="button" class="btn btn-secondary" style="position: absolute;
+    top: 72px;
+    left: 51%;
     width: 71px;
-    border: 3px solid #73AD21;
     padding: 6px;">
   <a href="/list" style="color:white; text-decoration: none;">Exit</a>
 </button>

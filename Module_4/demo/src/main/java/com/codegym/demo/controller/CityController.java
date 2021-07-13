@@ -76,6 +76,10 @@ public class CityController {
 
     private boolean checkCityValid(@ModelAttribute City city, ModelAndView modelAndView) {
         boolean isValidCity = true;
+        if(city.getName().equals("")){
+            modelAndView.addObject("error_name_msg", "Name can not be null");
+            isValidCity = false;
+        }
         if(city.getArea()<=0){
             modelAndView.addObject("error_area_msg","Area must be positive");
             isValidCity = false;

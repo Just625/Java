@@ -13,6 +13,9 @@
             <th>Name:</th>
             <td>
                 <input type="text" th:field="*{name}">
+                <div th:if="${error_name_msg}">
+                    <p style="color: red" th:text="${error_name_msg}"></p>
+                </div>
             </td>
         </tr>
         <tr>
