@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>City detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<h3><span th:text="${city.name}"></span><span> City</span></h3>
+<button><a href="/list">Back to city list</a></button>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td th:text="${city.name}"></td>
+    </tr>
+    <tr>
+        <td>Country:</td>
+        <td th:text="${city.country.name}"></td>
+    </tr>
+    <tr>
+        <td>Area:</td>
+        <td th:text="${city.area}"></td>
+    </tr>
+    <tr>
+        <td>Population:</td>
+        <td th:text="${city.population}"></td>
+    </tr>
+    <tr>
+        <td>Gdp:</td>
+        <td th:text="${city.gdp}"></td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td th:text="${city.description}"></td>
+    </tr>
+</table>
+<div>
+    <button class="btn btn-primary"><a th:href="@{/edit/__${city.id}__}" style="color:white;text-decoration: none;">Edit</a></button>
+    <button class="btn btn-danger"><a th:href="@{/delete/__${city.id}__}" style="color:white;text-decoration: none;">Delete</a></button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
