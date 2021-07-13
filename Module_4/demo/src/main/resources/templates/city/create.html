@@ -13,9 +13,7 @@
             <th>Name:</th>
             <td>
                 <input type="text" th:field="*{name}">
-                <div th:if="${error_name_msg}">
-                    <p style="color: red" th:text="${error_name_msg}"></p>
-                </div>
+                <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
             </td>
         </tr>
         <tr>
@@ -30,27 +28,21 @@
             <th>Area:</th>
             <td>
                 <input type="text" th:field="*{area}">
-                <div th:if="${error_area_msg}">
-                    <p style="color: red" th:text="${error_area_msg}"></p>
-                </div>
+                <div style="color: red" th:if="${#fields.hasErrors('area')}" th:errors="*{area}">Area Error</div>
             </td>
         </tr>
         <tr>
             <th>Population:</th>
             <td >
                 <input type="text" th:field="*{population}">
-                <div th:if="${error_population_msg}">
-                    <p style="color: red" th:text="${error_population_msg}"></p>
-                </div>
+                <div style="color: red" th:if="${#fields.hasErrors('population')}" th:errors="*{population}">Population Error</div>
             </td>
         </tr>
         <tr>
             <th>GDP:</th>
             <td>
                 <input type="text" th:field="*{gdp}">
-                <div th:if="${error_gdp_msg}">
-                    <p style="color: red" th:text="${error_gdp_msg}"></p>
-                </div>
+                <div style="color: red" th:if="${#fields.hasErrors('gdp')}" th:errors="*{gdp}">Gdp Error</div>
             </td>
         </tr>
         <tr>

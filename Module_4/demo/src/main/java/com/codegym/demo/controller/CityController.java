@@ -41,14 +41,13 @@ public class CityController {
 
     @PostMapping("/create")
     public ModelAndView saveCity(@Validated @ModelAttribute City city, BindingResult bindingResult){
-        ModelAndView modelAndView = new ModelAndView("city/create");
-        if(checkCityValid(city, modelAndView)){
-                cityService.save(city);
-                List<City> cities = (List<City>) cityService.findAll();
-                modelAndView = new ModelAndView("city/list");
-                modelAndView.addObject("msg", "City added!");
-                modelAndView.addObject("cities", cities);
-            }
+        if(bindingResult.hasFieldErrors()){
+            return new ModelAndView("city/create");
+        }
+        ModelAndView modelAndView = new ModelAndView("city/list");
+        cityService.save(city);
+        modelAndView.addObject("cities", cityService.findAll());
+        modelAndView.addObject("msg","City created");
         return modelAndView;
     }
     @GetMapping("/edit/{id}")
@@ -62,37 +61,16 @@ public class CityController {
     }
 
     @PostMapping("/edit")
-    public ModelAndView editCity(@ModelAttribute City city){
-        ModelAndView modelAndView = new ModelAndView("city/edit");
-        if(checkCityValid(city, modelAndView)){
+    public ModelAndView editCity(@Validated @ModelAttribute City city, BindingResult bindingResult){
+        if(bindingResult.hasFieldErrors()){
+            return new ModelAndView("city/edit");
+        }
+        ModelAndView modelAndView =  new ModelAndView("city/list");
             cityService.save(city);
             List<City> cities = (List<City>) cityService.findAll();
-            modelAndView = new ModelAndView("city/list");
             modelAndView.addObject("msg", "City updated!");
             modelAndView.addObject("cities", cities);
-        }
         return modelAndView;
-    }
-
-    private boolean checkCityValid(@ModelAttribute City city, ModelAndView modelAndView) {
-        boolean isValidCity = true;
-        if(city.getName().equals("")){
-            modelAndView.addObject("error_name_msg", "Name can not be null");
-            isValidCity = false;
-        }
-        if(city.getArea()<=0){
-            modelAndView.addObject("error_area_msg","Area must be positive");
-            isValidCity = false;
-        }
-        if(city.getPopulation()<=0){
-            modelAndView.addObject("error_population_msg","Population must be positive");
-            isValidCity = false;
-        }
-        if(city.getGdp()<=0){
-            modelAndView.addObject("error_gdp_msg","Gdp must be positive");
-            isValidCity = false;
-        }
-        return isValidCity;
     }
 
     @GetMapping("/view/{id}")
