@@ -1,0 +1,24 @@
+<table>
+  <tr>
+    <th>First number:</th>
+    <td><input type="number" [(ngModel)]="calculator.number1"></td>
+  </tr>
+  <tr>
+    <th>Second number:</th>
+    <td><input type="number" [(ngModel)]="calculator.number2"></td>
+  </tr>
+  <tr>
+    <th>Operator:</th>
+    <td><input type="text"  [(ngModel)]="calculator.operator"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button type="button"(click)="getResult()">=</button></td>
+  </tr>
+  <tr>
+    <th>Result:</th>
+    <td><input type="text" [(ngModel)]="calculator.result" readonly="readonly"></td>
+  </tr>
+</table>
+<!--<p>{{calculator.result}}</p>-->
+
